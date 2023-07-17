@@ -1,5 +1,6 @@
 
 /* FONTS-START */
+
 @font-face {
    font-family: myFirstFont;
    src: url(../../../fonts/Poppins/Poppins-Italic.ttf);
@@ -14,6 +15,12 @@
    font-family: myThirdFont;
    src: url(../../../fonts/Montserrat/Montserrat-Italic.ttf);
 }
+
+@font-face {
+   font-family: myFourthFont;
+   src: url(../../../fonts/Poppins//Poppins-ExtraLightItalic.ttf);
+}
+
 /* FONTS-END */
 
 /*--------------------------------------------------------------------*/
@@ -136,7 +143,7 @@ body{
 }
 
 #upper-side{
-   background: #3b3838;
+   background: #000000;
 }
 
 #upper-side .service{
@@ -150,7 +157,7 @@ body{
 
 #upper-side .social-medias{
    display: flex;
-   gap: 15px;
+   gap: 5%;
    justify-content: right;
    font-size: 19px;
    padding: 10px 0;
@@ -276,14 +283,8 @@ body{
    color: black;
 }
 
-
 #middle-side .flags{
    padding: 10px;
- }
-
-#middle-side .flags .country-flag{
-   display: flex;
-   gap: 10px;
 }
 
 #middle-side .flags .country-flag{
@@ -404,7 +405,9 @@ body{
    display: flex;
    list-style-type: none;
    margin: 0;
-   gap: 8%;
+   gap: 9%;
+   padding: 0;
+   margin-left: 15%;
 }
 
 #down-side .menu ul li{
@@ -415,7 +418,9 @@ body{
    font-family: myFirstFont;
    font-size: 17px;
    text-decoration: none;
-   letter-spacing: 1px;
+   letter-spacing: 2px;
+   font-weight: bolder;
+   color: black;
 }
 
 #down-side .menu ul li .horizontal-line{
@@ -484,9 +489,7 @@ body{
 #down-side .info{
    position: relative;
    display: flex;
-   gap: 35px;
-   margin-left: 12%;
-   animation: info 0.5s;
+   gap: 15%;
 }
 
 #down-side .info .title span:nth-child(1){
@@ -847,80 +850,83 @@ body{
    color: #8d8d8d;
 }
 
-#tab-menu{
+.products{
    background: #ededed;
-   margin-top: 20px;
-   height: 132rem;
+   height: 129rem;
 }
 
-#tab-menu ul{
+.products ul{
    justify-content: center;
    --bs-border-radius: 30px;
    --bs-nav-pills-border-radius: var(--bs-border-radius);
    border-bottom: 2px solid green;
    padding-bottom: 14px;
    background: #1a642af2;
-   margin: 25px 0 !important;
+   margin: 50px 0 !important;
    border-radius: 30px;
    height: 65px;
+   box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
 }
 
-#tab-menu ul li{
+.products ul li{
    margin-top: 8px;
    justify-content: center;
 }
 
 
-#tab-menu .nav-link.active{
+.products .nav-link.active{
    background: #bfffbf;
    font-size: 25px;
    color: #097008;
    padding: 5px 20px;
 }
 
-#tab-menu .btn{
+.products .btn{
    font-size: 23px;
    color: white;
    font-weight: 500;
 }
 
-#tab-menu .tab-content{
+.products .tab-content{
    position: relative;
 }
 
-#tab-menu .tab-content .tab{
+.products .tab-content .tab{
    display: flex;
    flex-wrap: wrap;
    position: absolute;
    padding-left: 30px;
 }
 
-#tab-menu .tab-content > .active{
+.products .tab-content > .active{
    z-index: 1;
 }
 
-#tab-menu .tab-content a{
+.products .tab-content a{
    color: black;
    text-decoration: none;
 }
 
-#tab-menu .tab-content .product{
+.products .tab-content .product{
+   width: 17rem !important;
+   height: 27rem;
    border: 2px solid green;
    border-radius: 30px;
    position: relative;
    padding-bottom: 10px;
    margin-bottom: 45px;
+   box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
 }
 
-#tab-menu .tab-content .product:hover{
+.products .tab-content .product:hover{
    cursor: pointer;
 }
 
-#tab-menu .tab-content .product .product-images{
-   width: 284px;
+.products .tab-content .product-images{
+   width: 270px;
    height: 265px;
    position: relative;
-   padding: 35px 35px;
+   padding: 39px 35px;
    margin-bottom: 0;
    background-image: linear-gradient(45deg, #2edf27, #f9f9f9);
    border-top-left-radius: 26px;
@@ -928,26 +934,26 @@ body{
    border: 3px solid green;
 }
 
-#tab-menu .tab-content .product .product-images img{
-   width: 74%;
-   height: 74%;
+.products .tab-content .product-images img{
+   width: 70%;
+   height: 70%;
    position: absolute;
 }
 
 
-#tab-menu .tab-content .product-images .image2{
+.products .tab-content .product-images .image2{
    display: none;
 }
 
-#tab-menu .tab-content .product:hover .image1{
+.products .tab-content .product:hover .image1{
    display: none;
 }
 
-#tab-menu .tab-content .product:hover .image2{
+.products .tab-content .product:hover .image2{
    display: block;
 }
 
-#tab-menu .tab-content .product .product-add-to-wishlist{
+.products .tab-content .product-add-to-wishlist{
    position: absolute;
    right: 10px;
    top: 10px;
@@ -957,83 +963,82 @@ body{
    display: none;
 }
 
-#tab-menu .tab-content .product .product-add-to-wishlist .wishlist{
+.products .tab-content .product-add-to-wishlist .wishlist{
    display: none;
    padding-left: 5px;
 }
 
-#tab-menu .tab-content .product .product-add-to-wishlist:hover .wishlist{
+.products .tab-content .product-add-to-wishlist:hover .wishlist{
    font-size: 14px;
    display: inline-block;
 }
 
-#tab-menu .tab-content .product .product-add-to-wishlist svg{
+.products .tab-content .product-add-to-wishlist svg{
    padding: 0 2px;
    animation: blink 0.5s infinite;
 }
 
-#tab-menu .tab-content .product .product-add-to-wishlist a{
+.products .tab-content .product-add-to-wishlist a{
    color: white;
 }
 
-#tab-menu .tab-content .product:hover .product-add-to-wishlist{
+.products .tab-content .product:hover .product-add-to-wishlist{
    display: block;
 }
 
-#tab-menu .tab-content .product .product-shuffle-eyeglasses{
+.products .tab-content .product-shuffle-eyeglasses{
    position: absolute;
-   top: 51%;
+   top: 46%;
    height: 0;
    width: 100%;
    transition: height 0.4s;
    background-color: #216a2a;
 }
 
-#tab-menu .tab-content .product .product-shuffle-eyeglasses .icons{
+.products .tab-content .product-shuffle-eyeglasses .icons{
    display: flex;
    justify-content: space-around;
    margin-top: 10px;
    color: white;
 }
 
-#tab-menu .tab-content .product .product-shuffle-eyeglasses .vertical-line{
+.products .tab-content .product-shuffle-eyeglasses .vertical-line{
    width: 1px;
    height: 0;
    background-color: silver;
    display: none;
 }
 
-#tab-menu .tab-content .product .product-shuffle-eyeglasses svg{
+.products .tab-content .product-shuffle-eyeglasses svg{
    display: none;
 }
 
-#tab-menu .tab-content .product:hover .product-shuffle-eyeglasses{
+.products .tab-content .product:hover .product-shuffle-eyeglasses{
    height: 35px;
 }
 
-#tab-menu .tab-content .product:hover .product-shuffle-eyeglasses .vertical-line{
+.products .tab-content .product:hover .product-shuffle-eyeglasses .vertical-line{
    display: block;
 }
 
-#tab-menu .tab-content .product:hover .product-shuffle-eyeglasses svg{
+.products .tab-content .product:hover .product-shuffle-eyeglasses svg{
    animation: blink 0.5s infinite;
    display: block;
 }
 
-
-#tab-menu .tab-content .product:hover .vertical-line{
+.products .tab-content .product:hover .vertical-line{
    height: 17px;
 }
 
-#tab-menu .tab-content .product-shuffle-eyeglasses:hover {
+.products .tab-content .product-shuffle-eyeglasses:hover {
    height: 35px;
 }
 
-#tab-menu .tab-content .product-shuffle-eyeglasses:hover .vertical-line {
+.products .tab-content .product-shuffle-eyeglasses:hover .vertical-line {
    height: 17px;
 }
 
-#tab-menu .tab-content .product-featured{
+.products .tab-content .product-featured{
    position: absolute;
    background-color: green;
    padding: 10px 8px;
@@ -1042,59 +1047,59 @@ body{
    top: 5px;
 }
 
-#tab-menu .tab-content .product-featured span{
+.products .tab-content .product-featured span{
    font-size: 15px;
    color: white;
    animation: blink 0.5s infinite;
 }
 
-#tab-menu .tab-content .product .product-content{
+.products .tab-content .product-content{
   text-align: center;
 }
 
-#tab-menu .tab-content .product .product-content:hover{
+.products .tab-content .product-content:hover{
    color: rgb(3 139 3);
  }
  
 
-#tab-menu .tab-content .product .product-content .product-rating{
+.products .tab-content .product-content .product-rating{
   font-size: 13px;
 }
 
-#tab-menu .tab-content .product .product-content .product-rating svg{
+.products .tab-content .product-content .product-rating svg{
    color: gray;
 }
 
-#tab-menu .tab-content .product .product-content .product-rating .active{
+.products .tab-content .product-content .product-rating .active{
    color: green;
 }
 
-#tab-menu .tab-content .product .product-content .product-review{
+.products .tab-content .product-content .product-review{
    font-weight: 400;
-   font-size: 17px;
+   font-size: 15px;
    color: #877f7f;
 }
 
-#tab-menu .tab-content .product .product-content .product-name{ 
+.products .tab-content .product-content .product-name{ 
    margin-right: 10px;
    font-size: 20px;
 }
 
-#tab-menu .tab-content .product .product-content .product-price{
+.products .tab-content .product-content .product-price{
    display: flex;
    gap: 10px;
    font-size: 17px;
-   margin-bottom: 25px;
-   margin-left: 12%;
+   margin-bottom: 35px;
+   margin-left: 8%;
    font-weight: 700;
    font-style: italic;
 }
 
-#tab-menu .tab-content .product .product-content .product-price .discount{
+.products .tab-content .product-content .product-price .discount{
    text-decoration: 2px line-through;
 }
 
-#tab-menu .tab-content .product .product-content .product-add-to-cart{
+.products .tab-content .product-content .product-add-to-cart{
    background: #37b937;
    padding: 10px 20px;
    border-radius: 30px;
@@ -1103,11 +1108,11 @@ body{
    font-size: 16px;
 }
 
-#tab-menu .tab-content .product .product-content .product-add-to-cart:hover{
+.products .tab-content .product-content .product-add-to-cart:hover{
    background: green;
 }
 
-#tab-menu .tab-content .product .product-content .product-add-to-cart svg{
+.products .tab-content .product-content .product-add-to-cart svg{
    margin-right: 10px;
    color: white;
    animation: blink 0.5s infinite;
@@ -1168,21 +1173,157 @@ body{
 }
 
 #advertisement .advert{
-   width: 65%;
-   height: 270px;
-   margin-left: 18%;
-   border-radius: 30px;
+   width: 100%;
+   height: 380px;
+   position: relative;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #advertisement .advert img{
    width: 100%;
    height: 100%;
-   border-radius: inherit;
-   transition: transform 0.4s;
 }
 
-#advertisement .advert img:hover{
+#advertisement .advert .bg-color{
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   position: absolute;
+   top: 0;
+   opacity: 0.3;
+}
+
+#advertisement .advert-content{
+   position: absolute;
+   top: 19%;
+   text-align: center;
+   color: white;
+   font-family: 'myFirstFont';
+   animation: blink 0.4s infinite;
+   background-image: linear-gradient(45deg, #00000087, #0000003b);
+   padding: 45px 0;
+}
+
+#advertisement .advert-content:hover{
   cursor: pointer;
-  transform: scale(0.9);
 }
 
+#advertisement .advert-content h2{
+   font-weight: 600;
+   margin-bottom: 40px;
+   font-size: 35px;
+}
+
+#advertisement .advert-content p{
+   font-size: 22px;;
+   width: 70%;
+   margin: 0 auto;
+   font-family: myFirstFont;
+}
+
+.product-title{
+   text-align: center;
+   padding: 30px 0;
+}
+
+.product-title h1{
+   border: 1px solid green;
+   padding: 5px 5px;
+   border-radius: 30px;
+   background-image: linear-gradient(45deg, #7ccd91, #e7e5e5);
+   font-size: 35px;
+}
+
+#countdown .countdown{
+   position: relative;
+}
+
+#countdown .countdown:hover{
+   cursor: pointer;
+}
+
+#countdown .countdown .countdown-image{
+   height: 775px;
+   width: 100%;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   filter: brightness(0.9);
+}
+
+#countdown .countdown .countdown-image img{
+   width: 100%;
+   height: 100%;
+}
+
+#countdown .countdown .countdown-text{
+   position: absolute;
+   top: 5%;
+   font-family: cursive;
+   font-style: italic;
+   width: 44%;
+   text-align: center;
+   padding: 45px 5px;
+}
+
+#countdown .countdown .countdown-text h1{
+   margin-bottom: 10%;
+   color: green;
+}
+
+#countdown .countdown .countdown-text p{
+   font-size: 23px;
+   line-height: 40px;
+   font-family: cursive;
+}
+
+
+#countdown .countdown .countdown-timer {
+   display: flex;
+   justify-content: center;
+   height: 110px;
+   align-items: center;
+   gap: 10px;
+   font-size: 35px;
+   position: absolute;
+   top: 60%;
+   left: 9%;
+}
+
+#countdown .countdown .countdown-timer .countdown-item{
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   border-radius: 50%;
+   background-image: linear-gradient(45deg, green, lightgreen);
+   color: white;
+}
+
+#countdown .countdown .countdown-timer .countdown-item span {
+   display: block;
+}
+
+#countdown .countdown .countdown-timer .countdown-item span:nth-child(1){
+   font-size: 40px;
+}
+
+#countdown .countdown .countdown-timer .countdown-item span:nth-child(2){
+   font-size: 15px;
+   font-weight: 700;
+}
+
+#countdown .countdown a{
+   text-decoration: none;
+   border: 3px solid green;
+   border-radius: 35px;
+   background-image: linear-gradient(45deg, green, lightgreen);
+   font-size: 20px;
+   padding: 5px 45px;
+   color: white;
+   font-weight: 500;
+   cursor: pointer;
+   animation: blink 0.4s infinite;
+   position: absolute;
+   top: 85%;
+   left: 16%;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
