@@ -1,5 +1,4 @@
-// HEADER-STAR
-
+// FLAG
 let flags = document.querySelectorAll(".country-flag");
 
 for (const flag of flags) {
@@ -20,12 +19,11 @@ for (const flag of flags) {
 
     })
 }
-// HEADER-END
+// FLAG
 
 
 
-// MAIN-START
-
+// OWL-CAROUSEL
 $(document).ready(function(){
 
     $('.loop').owlCarousel({
@@ -53,7 +51,10 @@ $(document).ready(function(){
     });
     
   });
+// OWL-CAROUSEL
 
+
+//COUNTDOWN
 const targetDate = new Date("2023-07-30 23:59:59").getTime();
 
 const countdownInterval = setInterval(function() {
@@ -73,5 +74,15 @@ document.getElementById("minutes").innerText = numberOfMinutes;
 document.getElementById("seconds").innerText = numberOfSeconds;
 
 }, 1000);
+//COUNTDOWN
 
-// MAIN-END
+
+
+//UP-ARROW
+let upArrow = document.querySelector(".up-arrow");
+
+upArrow.addEventListener("click",function(){
+    window.scrollTo(0,0);
+})
+//UP-ARROW
+
