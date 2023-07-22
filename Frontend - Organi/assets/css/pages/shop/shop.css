@@ -549,7 +549,7 @@
  }
 
 #banner .banner{
-    background-image: url(../../../images/shop/banners/banner1.jpg);
+    background-image: url(../../../images/banners/banner6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -577,16 +577,12 @@
     animation: blink 0.4s infinite;
 }
 
-#filtering{
-    background: #f7f7f7;
-}
-
 #filtering .left-side{
     font-family: emoji;
 }
 
 #filtering .left-side{
-    margin-left: 40px;
+   margin-left: 43px;
 }
 
 #filtering .left-side .banner-image{
@@ -628,7 +624,7 @@
     height: 40px;
     border-radius: 10px;
     padding-left: 10px;
-    border: 1px solid #a9a9a9;
+    border: 2px solid #a9a9a9;
     font-size: 16px;
     font-style: italic;
     color: gray;
@@ -681,6 +677,7 @@
 #filtering .left-side .filter ul li{
    padding: 5px 0;
    border-bottom: 1px solid #007800;
+   font-family: cursive;
 }
 
 #filtering .left-side .filter ul li label:hover{ 
@@ -689,10 +686,10 @@
 
 #filtering .left-side .filter ul li label{
    font-size: 20px;
-   font-family: cursive;
 }
 
-#filtering .left-side .filter ul li label:hover{
+#filtering .left-side .filter ul li:hover{
+   cursor: pointer;
    color: green;
 }
 
@@ -701,20 +698,23 @@
  }
 
 #filtering .left-side .filter ul li input{ 
-   width: 15px;
-   height: 15px;
+   width: 17px;
+   height: 17px;
    cursor: pointer;
    margin-right: 6px;
    position: relative;
-   top: 3px;
+   top: 5px;
+   background-color: green;
+   border: none;
+   box-shadow: none;
 }
 
-#filtering .left-side .filter ul li input:hover + label{ 
-  color: green;
+#filtering .left-side .filter ul li input:checked{ 
+   box-shadow: 0 0 15px green;
 }
 
 #filtering .left-side .filter ul li svg{
-  color: white;
+   color: white;
 }
 
 #filtering .left-side .filter ul li svg:hover{ 
@@ -726,13 +726,12 @@
 }
 
 #filtering .left-side .filter ul li span{
-   font-family: cursive;
    font-weight: 600;
    float: right;
 }
 
 #filtering .right-side{
-   margin-left: 40px;
+   margin-left: 70px;
 }
 
 #filtering .products ul{
@@ -1005,9 +1004,9 @@
 }
 
 #filtering .sort-by span{
-   font-size: 20px;
-    font-weight: 500;
-    margin-right: 10px;
+   font-size: 21px;
+   font-weight: 500;
+   margin-right: 5px;
 }
 
 #filtering .sort-by select{
@@ -1020,69 +1019,33 @@
    outline: none;
 }
 
-#filtering .sort-by select option{
-   background: #dfdada;
-}
-
-
 #filtering .sort-by select:hover{
   cursor: pointer;
 }
 
 #filtering .pagination{
-   justify-content: center;
+   margin-left: 26%;
+ }
+
+#filtering .pagination li{
+   margin-right: 10px;
+ }
+
+
+#filtering .pagination li a{
+   box-shadow: none;
+   border-radius: 25px;
+   color: green;
+   border-color: green;
  }
 
 #filtering .pagination li a:hover{
    background: green;
    color: white;
  }
-  
-  
-
-/*-----------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #footer .bg-image{
-    background-image: url(../../../images/home/backgrounds/background4.png);
+    background-image: url(../../../images/backgrounds/background4.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1283,7 +1246,7 @@
     height: 70px;
     background-color: black;
     position: fixed;
-    right: 10px;
+    right: 8px;
     bottom: 90px;
     z-index: 123;
     border-radius: 50%;
@@ -1310,4 +1273,3 @@
    letter-spacing: 1px;
  }
 
- */

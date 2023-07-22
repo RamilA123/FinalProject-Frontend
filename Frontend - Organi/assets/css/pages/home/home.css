@@ -360,7 +360,7 @@
    background-color: #4d4646;
    width: 50px;
    height: 50px;
-   left: 13px;
+   left: 12px;
    border-radius: inherit;
    position: absolute;
 }
@@ -545,7 +545,7 @@
 }
 
 #banner .banner-section{
-   background-image: url(../../../images/home/backgrounds/background2.png);
+   background-image: url(../../../images/backgrounds/background2.png);
    background-repeat: no-repeat;
    background-size: cover;
    width: 100%;
@@ -615,7 +615,7 @@
 #banner .text-effect span {
    position: relative;
    opacity: 0;
-   animation: text-effect 2s ease-in-out infinite;
+   animation: text-effect 2.4s ease-in-out infinite;
 }
 
  #banner .text-effect span:nth-child(1) {
@@ -880,6 +880,12 @@
 .products ul li{
    margin-top: 8px;
    justify-content: center;
+   margin-left: 40px;
+}
+
+.products ul li:hover .btn{
+   color: #097008;
+   background: #bfffbf;
 }
 
 
@@ -887,13 +893,13 @@
    background: #bfffbf;
    font-size: 25px;
    color: #097008;
-   padding: 5px 20px;
 }
 
 .products .btn{
    font-size: 23px;
    color: white;
    font-weight: 500;
+   padding: 5px 20px;
 }
 
 .products .tab-content{
@@ -1127,6 +1133,15 @@
    animation: blink 0.5s infinite;
 }
 
+.owl-dots .owl-dot span{
+  width: 20px !important;
+  height: 10px !important;
+}
+
+.owl-dots .owl-dot:hover span{
+   background: green !important;
+ }
+ 
 #top-featured .owl-item{
    margin-right: -69px !important;
 }
@@ -1550,6 +1565,18 @@
    margin-left: 65px;
 }
 
+#blog .blog-btn a{
+   border-radius: 20px;
+   padding: 5px 20px;
+   font-size: 18px;
+   background: #2b932be3;
+   border: none;
+}
+
+#blog .blog-btn a:hover{
+  background-color: green;
+}
+
 #blog h1{
    border: 1px solid green;
    padding: 5px 5px;
@@ -1565,42 +1592,38 @@
 
 #blog .blog {
    width: 580px;
-   height: 650px;
    padding-right: 20px;
-   margin-bottom: 50px;
+   margin-top: 20px;
 }
 
 #blog .blog .blog-image{
    width: 560px;
    height: 390px;
    border-radius: 5%;
+   overflow: hidden;
 }
 
 #blog .blog .blog-image img{
    width: 100%;
    height: 100%;
    border-radius: inherit;
+   transition: 0.4s;
 }
 
-#blog .blog:hover{
+#blog .blog-image:hover{
    cursor: pointer;
 }
 
-#blog .blog:hover .blog-image{
-   transform: scale(1.1);
+#blog .blog-image img:hover{
+   transform: scale(1.2);
 }
 
-#blog .blog:hover .text{
-   margin-top: 20px;
+#blog .blog-image:hover + .blog-content .text span{
    color: green;
 }
 
 #blog .blog .blog-content{
    margin-top: 10px;
-}
-
-#blog .blog:hover .blog-content{
-   margin-top: 30px;
 }
 
 #blog .blog .blog-content .blog-author-date{
@@ -1635,10 +1658,16 @@
 #blog .blog .blog-content .blog-description p{
    font-size: 20px;
    width: 500px;
+   color: #343434;
+   font-style: italic;
+}
+
+#blog .blog-image:hover + .blog-content .text p{
+   color: green;
 }
 
 #footer .bg-image{
-   background-image: url(../../../images/home/backgrounds/background4.png);
+   background-image: url(../../../images/backgrounds/background4.png);
    background-repeat: no-repeat;
    background-size: cover;
    width: 100%;
