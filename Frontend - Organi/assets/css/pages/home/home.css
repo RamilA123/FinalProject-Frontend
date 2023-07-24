@@ -205,7 +205,7 @@
 }
 
 #header .middle-side {
-   background-image: linear-gradient(45deg, #e1e1e1, #ffffff);
+   background-image: linear-gradient(45deg, #f1eeee, #ffffff);
    border-top: 1px solid #d9d9d9;
    height: 200px;
 }
@@ -387,9 +387,10 @@
    background-color: #4d4646;
    width: 50px;
    height: 50px;
-   left: 12px;
+   left: 11px;
    border-radius: inherit;
    position: absolute;
+   bottom: 5px;
 }
 
 #header .middle-side .search .search-design2 {
@@ -411,7 +412,7 @@
    padding-left: 65px;
    color: gray;
    font-style: italic;
-
+   border-color: #c1c1c1;
 }
 
 #header .middle-side .search input:focus {
@@ -1520,12 +1521,24 @@
 
 #feedback .slider .bg-color {
    width: 99%;
-   height: 500px;
+   height: 600px;
    border-radius: 60px;
    text-align: center;
-   padding-top: 6%;
+   padding-top: 10%;
    margin: 5px auto;
    background-image: linear-gradient(to bottom, #409350, #ffffff, #277627);
+}
+
+#feedback .slider .bg-color1 {
+   background-image: linear-gradient(to bottom, #2ba346, #ffffff, #48ad48);
+}
+
+#feedback .slider .bg-color2 {
+   background-image: linear-gradient(to bottom, #0b661e, #c6edce, #086008);
+}
+
+#feedback .slider .bg-color3 {
+   background-image: linear-gradient(to bottom, #074614, #ffffff, #125412);
 }
 
 #feedback .slider .bg-color .feedback-image {
@@ -1575,12 +1588,26 @@
    opacity: 1;
 }
 
+#feedback .slider .btn:hover {
+   background: #2cb52c;
+}
+
 #feedback .slider .prev {
    left: 5%;
 }
 
+#feedback .slider .prev span:nth-child(1) {
+   position: relative;
+   right: 2px;
+}
+
 #feedback .slider .next {
    right: 5%;
+}
+
+#feedback .slider .next span:nth-child(1) {
+   position: relative;
+   left: 2px;
 }
 
 #blog .blogs {

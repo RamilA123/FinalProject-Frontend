@@ -205,7 +205,7 @@
 }
 
 #header .middle-side {
-   background-image: linear-gradient(45deg, #e1e1e1, #ffffff);
+   background-image: linear-gradient(45deg, #f1eeee, #ffffff);
    border-top: 1px solid #d9d9d9;
    height: 200px;
 }
@@ -387,9 +387,10 @@
    background-color: #4d4646;
    width: 50px;
    height: 50px;
-   left: 12px;
+   left: 11px;
    border-radius: inherit;
    position: absolute;
+   bottom: 5px;
 }
 
 #header .middle-side .search .search-design2 {
@@ -411,7 +412,7 @@
    padding-left: 65px;
    color: gray;
    font-style: italic;
-
+   border-color: #c1c1c1;
 }
 
 #header .middle-side .search input:focus {
@@ -488,23 +489,21 @@
    cursor: pointer;
 }
 
-#header .down-side .account-title:hover+.account-menu {
+#header .down-side .account-title:hover + .account-menu {
    visibility: visible;
    height: 132px;
-   background: white;
 }
 
 #header .down-side .account-menu {
    visibility: hidden;
    height: 0;
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
    transition: height 1s;
+   background: white;
 }
 
 #header .down-side .account-menu:hover {
    visibility: visible;
    height: 132px;
-   background: white;
 }
 
 
@@ -602,8 +601,42 @@
    animation: blink 0.4s infinite;
 }
 
+#blog .breadcrumb-sortby nav{
+   width: 410px;
+   margin-left: 5%;
+}
+
+#blog .breadcrumb .breadcrumb-items{
+   display: flex;
+   background: #d4fbd4;
+   padding: 5px 20px;
+   border-radius: 20px;
+   border: 1px solid #1f9b4b;
+}
+
+#blog .breadcrumb .breadcrumb-items:hover{
+   cursor: pointer;
+}
+
+#blog .breadcrumb .breadcrumb-items li a{
+   color: black;
+   text-decoration: none;
+   font-size: 18px;
+   font-style: italic;
+}
+
+#blog .breadcrumb .breadcrumb-items li a:hover{
+   color: green !important;
+}
+
+#blog .breadcrumb .breadcrumb-items .active a{
+   color: green !important;
+   font-weight: 700;
+}
+
 #blog .sort-by {
-   text-align: right
+   text-align: center;
+   margin-left: 30%;
 }
 
 #blog .sort-by span {
@@ -613,13 +646,15 @@
 }
 
 #blog .sort-by select {
-   height: 30px;
-   border-radius: 7px;
+   height: 40px;
+   border-radius: 10px;
    font-weight: 500;
    background: #d4fbd4;
    padding-right: 25px;
    padding-left: 5px;
+   border-color: green;
    outline: none;
+   border-color: #1f9b4b;
 }
 
 #blog .sort-by select:hover {
@@ -706,20 +741,19 @@
 }
 
 #blog .pagination {
-   margin-left: 42%;
-   margin-top: 20px;
+   margin-left: 26%;
 }
 
 #blog .pagination li {
    margin-right: 10px;
 }
 
-
 #blog .pagination li a {
    box-shadow: none;
    border-radius: 25px;
-   color: green;
+   color: black;
    border-color: green;
+   background: #efffef;
 }
 
 #blog .pagination li a:hover {
