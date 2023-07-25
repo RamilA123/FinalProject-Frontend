@@ -372,11 +372,13 @@
    border-bottom-left-radius: 25px;
 }
 
-#header .middle-side .search svg {
+#header .middle-side .search button {
    position: absolute;
-   top: 17px;
-   right: 30px;
+   top: 12px;
+   right: 23px;
    color: #e3d5d5;
+   border: 0;
+   background: none;
 }
 
 #header .middle-side .search svg:hover {
@@ -403,6 +405,10 @@
 
 #header .middle-side .search .search-design2:hover {
    cursor: pointer;
+}
+
+#header .middle-side .search form {
+   border-radius: inherit;
 }
 
 #header .middle-side .search input {
@@ -574,7 +580,6 @@
 
 
 #banner .banner-section {
-   background-image: url(../../../images/backgrounds/background2.png);
    background-repeat: no-repeat;
    background-size: cover;
    width: 100%;
@@ -893,12 +898,7 @@
    color: #8d8d8d;
 }
 
-.products {
-   background: #ededed;
-   height: 130rem;
-}
-
-.products ul {
+#tab-menu ul {
    justify-content: center;
    --bs-border-radius: 30px;
    --bs-nav-pills-border-radius: var(--bs-border-radius);
@@ -911,44 +911,56 @@
    box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
 }
 
-.products ul li {
+#tab-menu ul li {
    margin-top: 8px;
    justify-content: center;
    margin-left: 40px;
 }
 
-.products ul li:hover .btn {
+#tab-menu ul li:hover .btn {
    color: #097008;
    background: #bfffbf;
 }
 
 
-.products .nav-link.active {
+#tab-menu .nav-link.active {
    background: #bfffbf;
    font-size: 25px;
    color: #097008;
 }
 
-.products .btn {
+#tab-menu .btn {
    font-size: 23px;
    color: white;
    font-weight: 500;
    padding: 5px 20px;
 }
 
-.products .tab-content {
-   position: relative;
+#tab-menu .blog-btn a {
+   border-radius: 20px;
+   padding: 8px 28px;
+   font-size: 18px;
+   background: #198319e3;
+   border: none;
+   font-weight: 500;
+   font-family: myFirstFont;
+}
+
+#tab-menu .blog-btn a:hover {
+   background-color: green;
+}
+
+.products {
+   background: #ededed;
 }
 
 .products .tab-content .tab {
-   display: flex;
-   flex-wrap: wrap;
-   position: absolute;
    padding-left: 30px;
 }
 
-.products .tab-content>.active {
-   z-index: 1;
+.products .tab-content .show.active {
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .products .tab-content a {
@@ -1170,6 +1182,10 @@
 .products .owl-dots .owl-dot span {
    width: 13px !important;
    height: 13px !important;
+}
+
+.products .owl-item{
+   margin-right: -69px !important;
 }
 
 .owl-dots .owl-dot span {
@@ -1618,10 +1634,11 @@
 
 #blog .blog-btn a {
    border-radius: 20px;
-   padding: 5px 20px;
+   padding: 8px 28px;
    font-size: 18px;
    background: #2b932be3;
    border: none;
+   font-weight: 500;
 }
 
 #blog .blog-btn a:hover {
@@ -1718,7 +1735,6 @@
 }
 
 #footer .bg-image {
-   background-image: url(../../../images/backgrounds/background4.png);
    background-repeat: no-repeat;
    background-size: cover;
    width: 100%;
@@ -1755,14 +1771,11 @@
    transform: scale(1.2);
 }
 
-#footer .upper-side .left-side .subscribe {
-   display: flex;
-   gap: 10px;
-}
-
 #footer .upper-side .left-side .subscribe .input {
+   display: flex;
    border-radius: 10px;
-   width: 70%;
+   width: 375px;
+   gap: 5px;
 }
 
 #footer .upper-side .left-side .subscribe .input input {
@@ -1779,12 +1792,12 @@
    border-radius: 10px;
 }
 
-#footer .upper-side .left-side .subscribe-btn a {
+#footer .upper-side .left-side .subscribe-btn {
    background: #20bf20;
    border-radius: inherit;
 }
 
-#footer .upper-side .left-side .subscribe-btn a:hover {
+#footer .upper-side .left-side .subscribe-btn:hover {
    background: green;
 }
 

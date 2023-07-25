@@ -150,8 +150,8 @@
    }
 }
 
-@keyframes border-animation {
-   50% {
+@keyframes border-animation{
+   50%{
       border-color: rgb(9, 223, 9);
    }
 }
@@ -378,11 +378,13 @@
    border-bottom-left-radius: 25px;
 }
 
-#header .middle-side .search svg {
+#header .middle-side .search button {
    position: absolute;
-   top: 17px;
-   right: 30px;
+   top: 12px;
+   right: 23px;
    color: #e3d5d5;
+   border: 0;
+   background: none;
 }
 
 #header .middle-side .search svg:hover {
@@ -409,6 +411,10 @@
 
 #header .middle-side .search .search-design2:hover {
    cursor: pointer;
+}
+
+#header .middle-side .search form {
+   border-radius: inherit;
 }
 
 #header .middle-side .search input {
@@ -495,7 +501,7 @@
    cursor: pointer;
 }
 
-#header .down-side .account-title:hover + .account-menu {
+#header .down-side .account-title:hover+.account-menu {
    visibility: visible;
    height: 132px;
 }
@@ -503,8 +509,9 @@
 #header .down-side .account-menu {
    visibility: hidden;
    height: 0;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
    transition: height 1s;
-   background: white;
+   background-color: white;
 }
 
 #header .down-side .account-menu:hover {
@@ -579,7 +586,6 @@
 }
 
 #banner .banner {
-   background-image: url(../../../images/banners/banner6.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    width: 100%;
@@ -609,7 +615,6 @@
 
 #about .breadcrumb-sortby nav{
    width: 410px;
-   margin-left: 5%;
 }
 
 #about .breadcrumb .breadcrumb-items{
@@ -1124,45 +1129,6 @@
    left: 2px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #footer .bg-image {
    background-image: url(../../../images/backgrounds/background4.png);
    background-repeat: no-repeat;
@@ -1201,14 +1167,11 @@
    transform: scale(1.2);
 }
 
-#footer .upper-side .left-side .subscribe {
-   display: flex;
-   gap: 10px;
-}
-
 #footer .upper-side .left-side .subscribe .input {
+   display: flex;
    border-radius: 10px;
-   width: 70%;
+   width: 375px;
+   gap: 5px;
 }
 
 #footer .upper-side .left-side .subscribe .input input {
@@ -1225,12 +1188,12 @@
    border-radius: 10px;
 }
 
-#footer .upper-side .left-side .subscribe-btn a {
+#footer .upper-side .left-side .subscribe-btn {
    background: #20bf20;
    border-radius: inherit;
 }
 
-#footer .upper-side .left-side .subscribe-btn a:hover {
+#footer .upper-side .left-side .subscribe-btn:hover {
    background: green;
 }
 

@@ -48,7 +48,6 @@ for (const flag of flags) {
 
 
 
-
 // OWL-CAROUSEL
 $(document).ready(function () {
 
@@ -78,6 +77,8 @@ $(document).ready(function () {
 
 });
 // OWL-CAROUSEL
+
+
 
 
 //COUNTDOWN

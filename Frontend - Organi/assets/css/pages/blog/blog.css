@@ -372,11 +372,13 @@
    border-bottom-left-radius: 25px;
 }
 
-#header .middle-side .search svg {
+#header .middle-side .search button {
    position: absolute;
-   top: 17px;
-   right: 30px;
+   top: 12px;
+   right: 23px;
    color: #e3d5d5;
+   border: 0;
+   background: none;
 }
 
 #header .middle-side .search svg:hover {
@@ -403,6 +405,10 @@
 
 #header .middle-side .search .search-design2:hover {
    cursor: pointer;
+}
+
+#header .middle-side .search form {
+   border-radius: inherit;
 }
 
 #header .middle-side .search input {
@@ -489,7 +495,7 @@
    cursor: pointer;
 }
 
-#header .down-side .account-title:hover + .account-menu {
+#header .down-side .account-title:hover+.account-menu {
    visibility: visible;
    height: 132px;
 }
@@ -497,8 +503,9 @@
 #header .down-side .account-menu {
    visibility: hidden;
    height: 0;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
    transition: height 1s;
-   background: white;
+   background-color: white;
 }
 
 #header .down-side .account-menu:hover {
@@ -573,7 +580,6 @@
 }
 
 #banner .banner {
-   background-image: url(../../../images/banners/banner6.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    width: 100%;
@@ -603,7 +609,6 @@
 
 #blog .breadcrumb-sortby nav{
    width: 410px;
-   margin-left: 5%;
 }
 
 #blog .breadcrumb .breadcrumb-items{
@@ -636,7 +641,7 @@
 
 #blog .sort-by {
    text-align: center;
-   margin-left: 30%;
+   margin-left: 40%;
 }
 
 #blog .sort-by span {
@@ -741,7 +746,7 @@
 }
 
 #blog .pagination {
-   margin-left: 26%;
+   margin-left: 39%;
 }
 
 #blog .pagination li {
@@ -775,6 +780,10 @@
    font-size: 23px;
 }
 
+#blog .right-side .search form {
+   text-align: center;
+}
+
 #blog .right-side .search input {
    outline: none;
    width: 100%;
@@ -786,10 +795,23 @@
    font-style: italic;
    color: gray;
    letter-spacing: 1px;
+   border: none;
+}
+
+#blog .right-side .search button {
+   width: 130px;
+   border-radius: 30px;
+   font-size: 17px;
+   font-family: 'myFirstFont';
+   background: #008100;
+}
+
+#blog .right-side .search button:hover {
+   background-color: #106a10;
 }
 
 #blog .right-side .search input:focus {
-   border-color: black;
+   border: 2px solid #166824;
 }
 
 #blog .right-side .blog-items {
@@ -984,14 +1006,11 @@
    transform: scale(1.2);
 }
 
-#footer .upper-side .left-side .subscribe {
-   display: flex;
-   gap: 10px;
-}
-
 #footer .upper-side .left-side .subscribe .input {
+   display: flex;
    border-radius: 10px;
-   width: 70%;
+   width: 375px;
+   gap: 5px;
 }
 
 #footer .upper-side .left-side .subscribe .input input {
@@ -1008,12 +1027,12 @@
    border-radius: 10px;
 }
 
-#footer .upper-side .left-side .subscribe-btn a {
+#footer .upper-side .left-side .subscribe-btn {
    background: #20bf20;
    border-radius: inherit;
 }
 
-#footer .upper-side .left-side .subscribe-btn a:hover {
+#footer .upper-side .left-side .subscribe-btn:hover {
    background: green;
 }
 

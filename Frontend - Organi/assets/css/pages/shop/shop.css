@@ -148,7 +148,6 @@
       opacity: 0;
       top: 100px;
    }
-
 }
 
 @keyframes border-animation{
@@ -379,11 +378,13 @@
    border-bottom-left-radius: 25px;
 }
 
-#header .middle-side .search svg {
+#header .middle-side .search button {
    position: absolute;
-   top: 17px;
-   right: 30px;
+   top: 12px;
+   right: 23px;
    color: #e3d5d5;
+   border: 0;
+   background: none;
 }
 
 #header .middle-side .search svg:hover {
@@ -410,6 +411,10 @@
 
 #header .middle-side .search .search-design2:hover {
    cursor: pointer;
+}
+
+#header .middle-side .search form {
+   border-radius: inherit;
 }
 
 #header .middle-side .search input {
@@ -496,7 +501,7 @@
    cursor: pointer;
 }
 
-#header .down-side .account-title:hover + .account-menu {
+#header .down-side .account-title:hover+.account-menu {
    visibility: visible;
    height: 132px;
 }
@@ -504,8 +509,9 @@
 #header .down-side .account-menu {
    visibility: hidden;
    height: 0;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
    transition: height 1s;
-   background: white;
+   background-color: white;
 }
 
 #header .down-side .account-menu:hover {
@@ -580,7 +586,6 @@
 }
 
 #banner .banner {
-   background-image: url(../../../images/banners/banner6.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    width: 100%;
@@ -797,53 +802,9 @@
    margin-left: 70px;
 }
 
-#filtering .products ul {
-   justify-content: center;
-   --bs-border-radius: 30px;
-   --bs-nav-pills-border-radius: var(--bs-border-radius);
-   border-bottom: 2px solid green;
-   padding-bottom: 14px;
-   background: #1a642af2;
-   margin: 50px 0 !important;
-   border-radius: 30px;
-   height: 65px;
-   box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
-}
-
-#filtering .products ul li {
-   margin-top: 8px;
-   justify-content: center;
-}
-
-
-#filtering .products .nav-link.active {
-   background: #bfffbf;
-   font-size: 25px;
-   color: #097008;
-   padding: 5px 20px;
-}
-
-#filtering .products .btn {
-   font-size: 23px;
-   color: white;
-   font-weight: 500;
-}
-
 #filtering .products .tab-content {
-   position: relative;
    display: flex;
    flex-wrap: wrap;
-}
-
-#filtering .products .tab-content .tab {
-   display: flex;
-   flex-wrap: wrap;
-   position: absolute;
-   padding-left: 30px;
-}
-
-#filtering .products .tab-content > .active {
-   z-index: 1;
 }
 
 #filtering .products .tab-content a {
@@ -1149,14 +1110,11 @@
    transform: scale(1.2);
 }
 
-#footer .upper-side .left-side .subscribe {
-   display: flex;
-   gap: 10px;
-}
-
 #footer .upper-side .left-side .subscribe .input {
+   display: flex;
    border-radius: 10px;
-   width: 70%;
+   width: 375px;
+   gap: 5px;
 }
 
 #footer .upper-side .left-side .subscribe .input input {
@@ -1173,12 +1131,12 @@
    border-radius: 10px;
 }
 
-#footer .upper-side .left-side .subscribe-btn a {
+#footer .upper-side .left-side .subscribe-btn {
    background: #20bf20;
    border-radius: inherit;
 }
 
-#footer .upper-side .left-side .subscribe-btn a:hover {
+#footer .upper-side .left-side .subscribe-btn:hover {
    background: green;
 }
 
@@ -1313,7 +1271,7 @@
    height: 70px;
    background-color: black;
    position: fixed;
-   right: 8px;
+   right: 50px;
    bottom: 90px;
    z-index: 123;
    border-radius: 50%;
@@ -1329,13 +1287,4 @@
    font-size: 25px;
    color: lime;
    animation: blink 0.4s infinite;
-}
-
-.filter-price span {
-   position: relative;
-   bottom: 2px;
-   left: 5px;
-   color: green;
-   font-weight: 700;
-   letter-spacing: 1px;
 }
