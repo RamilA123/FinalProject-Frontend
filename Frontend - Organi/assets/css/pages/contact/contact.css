@@ -234,7 +234,6 @@
 
 #header .middle-side {
    background-image: linear-gradient(45deg, #f1eeee, #ffffff);
-   border-top: 1px solid #d9d9d9;
    height: 200px;
 }
 
@@ -612,6 +611,7 @@
    background-size: cover;
    width: 100%;
    height: 340px;
+   filter: brightness(0.9);
 }
 
 #banner .banner p {
@@ -626,7 +626,7 @@
 }
 
 #banner .banner h1 {
-   font-size: 60px;
+   font-size: 50px;
    font-weight: 500;
    font-style: italic;
    color: rgb(0, 194, 0);
@@ -734,7 +734,7 @@
 }
 
 #contact .left-side {
-   background: #9de59d;
+   background: #cbffcb;
    padding: 15px 15px;
    border-radius: 20px;
    border: 1px solid #1f9b4b;
@@ -757,7 +757,7 @@
 #contact .left-side p {
    font-weight: 500;
    font-style: italic;
-   color: #4e4e4e;
+   color: #3e3e3e;
    font-family: auto;
    font-size: 17px;
 }
@@ -819,7 +819,7 @@
 }
 
 #contact .right-side .contact-message {
-   background: #9de59d;
+   background: #cbffcb;
    padding: 15px 15px;
    border-radius: 20px;
    border: 1px solid #1f9b4b;
@@ -892,7 +892,7 @@
 
 #contact .right-side .contact-message .down-side button {
    border-radius: 30px;
-   background: #37b937;
+   background: #20bf20;
    border: none;
    font-weight: 600;
    font-style: italic;
@@ -947,12 +947,11 @@
 
 #city h1 {
    text-align: center;
-   margin-bottom: 50px;
-   font-weight: 700;
+   margin-bottom: 65px;
    font-size: 45px;
    font-style: italic;
    color: green;
-   font-family: serif;
+   font-family: cursive;
 }
 
 #city .city:hover {
@@ -988,33 +987,6 @@
 #city .city4 {
    background-image: url(../../../images/cities/city5.jpg);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #footer .bg-image {
    background-image: url(../../../images/backgrounds/background4.png);

@@ -206,7 +206,6 @@
 
 #header .middle-side {
    background-image: linear-gradient(45deg, #f1eeee, #ffffff);
-   border-top: 1px solid #d9d9d9;
    height: 200px;
 }
 
@@ -1118,11 +1117,6 @@
    text-align: center;
 }
 
-.products .tab-content .product-content:hover {
-   color: rgb(3 139 3);
-}
-
-
 .products .tab-content .product-content .product-rating {
    font-size: 13px;
 }
@@ -1157,7 +1151,12 @@
 }
 
 .products .tab-content .product-content .product-price .discount {
-   text-decoration: 2px line-through;
+   text-decoration: 2px line-through red;
+   color: red;
+}
+
+.products .tab-content .product-content .product-price span:nth-child(2) {
+   color: green;
 }
 
 .products .tab-content .product-content .product-add-to-cart {
@@ -1725,8 +1724,8 @@
 
 #blog .blog .blog-content .blog-description p {
    font-size: 20px;
-   width: 500px;
-   color: #343434;
+   width: 575px;
+   color: #464242;
    font-style: italic;
 }
 
