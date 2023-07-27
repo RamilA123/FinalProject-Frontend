@@ -274,17 +274,22 @@
 #header .middle-side .account:hover {
     color: #186618;
     cursor: pointer;
-    font-weight: 500;
 }
 
 #header .middle-side .account .login {
     margin-top: 6px;
-    font-size: 17px;
+    font-size: 16px;
     text-decoration: none;
     color: #186618;
+    font-weight: 500;
 }
 
-#header .middle-side .account img {
+#header .middle-side .account .image {
+    width: 40px;
+    height: 40px;
+ }
+
+#header .middle-side .account .image img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -832,43 +837,45 @@
     font-family: myFirstFont;
 }
 
-#review h3{
+#review h3 {
     font-size: 30px;
 }
 
-#review .review-content{
+#review .review-content {
     display: flex;
     gap: 25px;
     margin-top: 40px;
+    border-bottom: 1px solid #279935;
+    padding-bottom: 40px;
 }
 
-#review .review-content .review-user-image{
+#review .review-content .review-user-image {
     width: 12%;
     height: 12%;
     border-radius: 50%;
 }
 
-#review .review-content .review-user-image img{
+#review .review-content .review-user-image img {
     width: 100%;
     height: 100%;
     border-radius: inherit;
 }
 
-#review .review-content .review-user-description{
+#review .review-content .review-user-description {
     width: 100%;
 }
 
-#review .review-content .review-user-description .user-fullname-rating{
+#review .review-content .review-user-description .user-fullname-rating {
     display: flex;
     justify-content: space-between;
 }
 
-#review .review-content .review-user-description .user-fullname-rating .user-fullname span{
+#review .review-content .review-user-description .user-fullname-rating .user-fullname span {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
-#review .review-content .review-user-description .user-fullname-rating .user-rating:hover{
+#review .review-content .review-user-description .user-fullname-rating .user-rating:hover {
     cursor: pointer;
 }
 
@@ -882,47 +889,130 @@
 
 #review .review-content .review-user-description .user-description p {
     font-size: 17px;
-    color: #727272;
+    color: #222222;
     font-style: italic;
     margin-top: 15px;
 }
 
+#review .review-content .review-user-description .user-description span {
+    font-size: 17px;
+    font-weight: 500;
+}
 
+#add-review h2 {
+    font-weight: 700;
+    color: #363636;
+}
 
+#add-review .rating {
+    display: flex;
+    gap: 30px;
+}
 
+#add-review .rating .rating-title {
+    font-size: 20px;
+    color: #7d8978;
+}
 
+#add-review .rating .rating-icon {
+    margin-top: 3px;
+    cursor: pointer;
+}
 
+#add-review .rating .rating-icon svg {
+    color: #c5c2c2;
+    font-size: 15px;
+}
 
+#add-review .rating .rating-icon .active {
+    color: green;
+}
 
+#add-review .comment {
+    position: relative;
+}
 
+#add-review form {
+    display: inline-block;
+}
 
+#add-review .comment svg {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    font-size: 13px;
+    color: gray;
+}
 
+#add-review .comment textarea {
+    outline: none;
+    border-radius: 20px;
+    padding-left: 42px;
+    font-style: italic;
+    border-color: #cbc8c8;
+    color: #2a2a2a;
+    padding-top: 10px;
+    resize: none;
+    background: #f9f9f9;
+    letter-spacing: 1px;
+}
 
+#add-review .comment textarea::placeholder {
+    color: rgb(104, 104, 104);
+}
 
+#add-review .comment textarea:focus {
+    border-color: #35a935;
+}
 
+#add-review .comment input {
+    box-shadow: none;
+    border-radius: 20px;
+    font-style: italic;
+    border-color: #cbc8c8;
+    color: #2a2a2a;
+    padding-left: 40px;
+    font-size: 14px;
+    width: 390px;
+    background: #f9f9f9;
+    height: 45px;
+    letter-spacing: 1px;
+}
 
+#add-review .comment input:focus {
+    border-color: #35a935;
+}
 
+#add-review .comment input::placeholder {
+    color: rgb(104, 104, 104);
+}
 
+#add-review .comment-description svg {
+    top: 19px;
+}
 
+#add-review .comment-name-email {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
 
+#add-review .submit-btn {
+    text-align: center;
+}
 
+#add-review .submit-btn button {
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-style: italic;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#add-review .alert{
+    width: 60%;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
 
 #footer .bg-image {
     background-image: url(../../../images/backgrounds/background4.png);
