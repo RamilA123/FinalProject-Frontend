@@ -287,7 +287,7 @@
 #header .middle-side .account .image {
     width: 40px;
     height: 40px;
- }
+}
 
 #header .middle-side .account .image img {
     width: 100%;
@@ -482,9 +482,9 @@
     display: flex;
     list-style-type: none;
     margin: 0;
-    gap: 9%;
+    gap: 75px;
     padding: 0;
-    margin-left: 15%;
+    margin-left: 80px;
 }
 
 #header .down-side .menu ul li {
@@ -515,51 +515,53 @@
     color: green
 }
 
-#header .down-side .account {
-    position: relative;
-    z-index: 1;
+#header .down-side .drop-down {
+    width: 60px;
 }
 
-#header .down-side .account-title {
-    display: inline-block;
+#header .down-side .drop-down-menu {
+    position: relative;
+    z-index: 1;
+    height: 0;
+    transition: height 0.5s;
+    background-color: white;
+    width: 215px;
+}
+
+#header .down-side .drop-down-menu li {
+    display: none;
+}
+
+#header .down-side .drop-down-title {
     padding-bottom: 32px;
 }
 
-#header .down-side .account-title:hover {
+#header .down-side .drop-down-title:hover {
     cursor: pointer;
 }
 
-#header .down-side .account-title:hover+.account-menu {
-    visibility: visible;
-    height: 132px;
+#header .down-side .drop-down-title:hover+.drop-down-menu {
+    height: 119px;
 }
 
-#header .down-side .account-menu {
-    visibility: hidden;
-    height: 0;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transition: height 1s;
-    background-color: white;
+#header .down-side .drop-down-title:hover+.drop-down-menu li {
+    display: block;
 }
 
-#header .down-side .account-menu:hover {
-    visibility: visible;
-    height: 132px;
+#header .down-side .drop-down-menu:hover {
+    height: 119px;
 }
 
-
-#header .down-side .account-menu .line {
-    display: inline-block;
-    width: max-content;
-    height: 0;
+#header .down-side .drop-down-menu:hover li {
+    display: block;
 }
 
-#header .down-side .account-menu li {
-    padding: 10px 20px;
+#header .down-side .drop-down-menu li {
+    padding: 7px 20px;
+    width: 215px
 }
 
-
-#header .down-side .account-menu li:hover {
+#header .down-side .drop-down-menu li:hover {
     background-image: linear-gradient(45deg, #cfcfcf, #ffffff);
 }
 
@@ -1008,7 +1010,7 @@
     font-style: italic;
 }
 
-#add-review .alert{
+#add-review .alert {
     width: 60%;
     border-radius: 30px;
     padding: 10px 15px;

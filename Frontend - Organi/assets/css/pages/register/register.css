@@ -20,11 +20,6 @@
     src: url(../../../fonts/Poppins//Poppins-ExtraLightItalic.ttf);
 }
 
-@font-face {
-    font-family: Poppins-Regular;
-    src: url(../../../fonts/Poppins/Poppins-Regular.ttf)
-}
-
 /* FONTS-END */
 
 /*--------------------------------------------------------------------*/
@@ -487,9 +482,9 @@
     display: flex;
     list-style-type: none;
     margin: 0;
-    gap: 9%;
+    gap: 75px;
     padding: 0;
-    margin-left: 15%;
+    margin-left: 80px;
 }
 
 #header .down-side .menu ul li {
@@ -520,50 +515,53 @@
     color: green
 }
 
-#header .down-side .account {
-    position: relative;
-    z-index: 1;
+#header .down-side .drop-down {
+    width: 60px;
 }
 
-#header .down-side .account-title {
-    display: inline-block;
+#header .down-side .drop-down-menu {
+    position: relative;
+    z-index: 1;
+    height: 0;
+    transition: height 0.5s;
+    background-color: white;
+    width: 215px;
+}
+
+#header .down-side .drop-down-menu li {
+    display: none;
+}
+
+#header .down-side .drop-down-title {
     padding-bottom: 32px;
 }
 
-#header .down-side .account-title:hover {
+#header .down-side .drop-down-title:hover {
     cursor: pointer;
 }
 
-#header .down-side .account-title:hover+.account-menu {
-    visibility: visible;
-    height: 132px;
+#header .down-side .drop-down-title:hover+.drop-down-menu {
+    height: 119px;
 }
 
-#header .down-side .account-menu {
-    visibility: hidden;
-    height: 0;
-    transition: height 1s;
-    background-color: white;
+#header .down-side .drop-down-title:hover+.drop-down-menu li {
+    display: block;
 }
 
-#header .down-side .account-menu:hover {
-    visibility: visible;
-    height: 132px;
+#header .down-side .drop-down-menu:hover {
+    height: 119px;
 }
 
-
-#header .down-side .account-menu .line {
-    display: inline-block;
-    width: max-content;
-    height: 0;
+#header .down-side .drop-down-menu:hover li {
+    display: block;
 }
 
-#header .down-side .account-menu li {
-    padding: 10px 20px;
+#header .down-side .drop-down-menu li {
+    padding: 7px 20px;
+    width: 215px
 }
 
-
-#header .down-side .account-menu li:hover {
+#header .down-side .drop-down-menu li:hover {
     background-image: linear-gradient(45deg, #cfcfcf, #ffffff);
 }
 
@@ -645,7 +643,7 @@
 
 #register .register-image {
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 60px;
     margin: 25px 0;
     margin-left: 25px;
 }
@@ -654,34 +652,34 @@
     width: 100%;
     height: 100%;
     border-radius: inherit;
-    filter: brightness(1);
+    filter: brightness(0.8);
     transition: all 0.4s;
 }
 
 #register .register-image img:hover {
     transform: scale(1.2);
-    filter: brightness(0.8);
+    filter: brightness(1);
     cursor: pointer;
 }
 
-#register .register-content{
+#register .register-content {
     background-image: linear-gradient(to bottom, #effff5, #d4e7d6);
     font-family: serif;
     margin-top: 43px;
-    border: 3px solid green;
+    border: 2px solid green;
     border-radius: 30px;
 }
 
-#register .register-content form{
+#register .register-content form {
     margin-left: 30px;
 }
 
-#register .register-title{
+#register .register-title {
     margin-right: 12px;
     margin-top: 20px;
 }
 
-#register .register-title h1{
+#register .register-title h1 {
     font-size: 50px;
     text-align: center;
     font-weight: bolder;
@@ -689,19 +687,19 @@
     font-style: italic;
 }
 
-#register .input{
+#register .input {
     margin-bottom: 20px;
     position: relative;
 }
 
-#register .input label{
+#register .input label {
     font-size: 18px;
     font-weight: 600;
     color: green;
     margin-bottom: 10px;
 }
 
-#register .input input{
+#register .input input {
     outline: none;
     width: 95%;
     height: 45px;
@@ -710,23 +708,24 @@
     border: 1px solid #d1d1d1;
     color: rgb(54, 48, 48);
     background: #f9f9f9;
+    letter-spacing: 1px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#register .input svg{
-   position: absolute;
-   right: 45px;
-   top: 50px;
-   font-size: 18px;
-   color: #5a5a5a;
-   z-index: 1;
+#register .input svg {
+    position: absolute;
+    right: 45px;
+    top: 50px;
+    font-size: 18px;
+    color: #5a5a5a;
+    z-index: 1;
 }
 
-#register .input svg:hover{
+#register .input svg:hover {
     cursor: pointer;
- }
+}
 
-#register .input .line{
+#register .input .line {
     position: absolute;
     width: 24px;
     height: 2px;
@@ -734,58 +733,59 @@
     right: 43px;
     top: 58px;
     transform: rotate(30deg);
- }
+}
 
-#register .input input:focus{
+#register .input input:focus {
     border-color: green;
 }
 
-#register .input input::placeholder{
+#register .input input::placeholder {
     color: rgb(59, 57, 57);
     font-size: 16px;
     letter-spacing: 1px;
     font-style: italic;
 }
 
-#register .forgot-password-remember-me{
+#register .forgot-password-remember-me {
     display: flex;
     justify-content: space-between;
     width: 90%;
 }
 
-#register .remember-me:hover{
+#register .remember-me:hover {
     cursor: pointer;
 }
 
-#register .remember-me:hover input,label{
+#register .remember-me:hover input,
+label {
     cursor: pointer;
 }
 
-#register .remember-me input{
+#register .remember-me input {
     background-color: green;
     border: none;
     box-shadow: none;
 }
 
-#register .remember-me input:checked{
+#register .remember-me input:checked {
     box-shadow: 0 0 10px green;
 }
 
-#register .remember-me label{
+#register .remember-me label {
     color: green;
     margin-left: 5px;
 }
 
-#register .forgot-password a{
+#register .forgot-password a {
     text-decoration: none;
     color: green;
 }
 
-#register .login-btn{
+#register .login-btn {
     margin-left: 25px;
 }
 
-#register .login-btn button{
+#register .login-btn button {
     width: 90%;
     height: 44px;
     border-radius: 30px;
@@ -794,22 +794,22 @@
     font-size: 24px;
 }
 
-#register .login-btn button:hover{
+#register .login-btn button:hover {
     background-color: rgb(26, 95, 26);
 }
 
-#register .already-account{
+#register .already-account {
     text-align: center;
     margin-top: 30px;
 }
 
-#register .already-account p{
-    color: rgb(73 74 73);
+#register .already-account p {
+    color: rgb(40 40 40);
     font-size: 18px;
     font-family: serif;
 }
 
-#register .already-account p a{
+#register .already-account p a {
     color: green;
     text-decoration: underline;
 }

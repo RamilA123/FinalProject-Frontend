@@ -56,12 +56,11 @@ upArrow.addEventListener("click", function () {
 //UP-ARROW
 
 
-
 //LOGIN-EYE-ICON-START
 
 $(document).ready(function(){
 
-    $(document).on("click","#register .eye",function(){
+    $(document).on("click","#login .eye",function(){
       let type = $(this).prev().attr("type");
   
       if (type == "password"){

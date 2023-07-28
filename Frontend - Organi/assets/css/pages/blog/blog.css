@@ -27,154 +27,154 @@
 /* ANIMATIONS-START */
 @keyframes blink {
    50% {
-       color: rgb(0, 194, 0)
+      color: rgb(0, 194, 0)
    }
 }
 
 @keyframes blink-facebook {
    50% {
-       color: rgb(17, 0, 255);
+      color: rgb(17, 0, 255);
    }
 }
 
 @keyframes blink-twitter {
    50% {
-       color: rgb(0, 247, 255);
+      color: rgb(0, 247, 255);
    }
 }
 
 @keyframes blink-instagram {
    50% {
-       color: rgb(200, 14, 224);
+      color: rgb(200, 14, 224);
    }
 }
 
 @keyframes blink-linked-in {
    50% {
-       color: rgb(28, 20, 148);
+      color: rgb(28, 20, 148);
    }
 }
 
 @keyframes blink-pinterest {
    50% {
-       color: rgb(211, 101, 119)
+      color: rgb(211, 101, 119)
    }
 }
 
 @keyframes blink-youtube {
    50% {
-       color: rgb(255, 0, 0)
+      color: rgb(255, 0, 0)
    }
 }
 
 @keyframes blink-google {
    50% {
-       color: rgb(255, 123, 0)
+      color: rgb(255, 123, 0)
    }
 }
 
 @keyframes blink-menu {
    50% {
-       color: white;
+      color: white;
    }
 }
 
 @keyframes text {
 
    from {
-       left: 120px;
+      left: 120px;
    }
 
    to {
-       left: 0;
+      left: 0;
    }
 }
 
 @keyframes info {
 
    from {
-       top: 100px;
+      top: 100px;
    }
 
    to {
-       top: 0;
+      top: 0;
    }
 }
 
 @keyframes animation-text-on-image1 {
 
    from {
-       top: 500px;
+      top: 500px;
    }
 
    to {
-       top: 133px
+      top: 133px
    }
 }
 
 @keyframes animation-text-on-image2 {
 
    from {
-       top: 500px;
+      top: 500px;
    }
 
    to {
-       top: 150px
+      top: 150px
    }
 }
 
 @keyframes glide1 {
    from {
-       top: 100px;
-       left: 0;
+      top: 100px;
+      left: 0;
    }
 
    to {
-       top: 140px;
-       left: 0;
+      top: 140px;
+      left: 0;
    }
 }
 
 @keyframes glide2 {
    from {
-       top: 50px;
-       right: 0;
+      top: 50px;
+      right: 0;
 
    }
 
    to {
-       top: 0;
-       right: 0;
+      top: 0;
+      right: 0;
    }
 }
 
 @keyframes text-effect {
    10% {
-       opacity: 0.5;
+      opacity: 0.5;
    }
 
    20% {
-       opacity: 1;
+      opacity: 1;
    }
 
    80% {
-       opacity: 1;
-       top: 0;
+      opacity: 1;
+      top: 0;
    }
 
    90% {
-       opacity: 0.5;
+      opacity: 0.5;
    }
 
    100% {
-       opacity: 0;
-       top: 100px;
+      opacity: 0;
+      top: 100px;
    }
 }
 
 @keyframes border-animation {
    50% {
-       border-color: rgb(9, 223, 9);
+      border-color: rgb(9, 223, 9);
    }
 }
 
@@ -482,9 +482,9 @@
    display: flex;
    list-style-type: none;
    margin: 0;
-   gap: 9%;
+   gap: 75px;
    padding: 0;
-   margin-left: 15%;
+   margin-left: 80px;
 }
 
 #header .down-side .menu ul li {
@@ -515,51 +515,53 @@
    color: green
 }
 
-#header .down-side .account {
-   position: relative;
-   z-index: 1;
+#header .down-side .drop-down {
+   width: 60px;
 }
 
-#header .down-side .account-title {
-   display: inline-block;
+#header .down-side .drop-down-menu {
+   position: relative;
+   z-index: 1;
+   height: 0;
+   transition: height 0.5s;
+   background-color: white;
+   width: 215px;
+}
+
+#header .down-side .drop-down-menu li {
+   display: none;
+}
+
+#header .down-side .drop-down-title {
    padding-bottom: 32px;
 }
 
-#header .down-side .account-title:hover {
+#header .down-side .drop-down-title:hover {
    cursor: pointer;
 }
 
-#header .down-side .account-title:hover+.account-menu {
-   visibility: visible;
-   height: 132px;
+#header .down-side .drop-down-title:hover+.drop-down-menu {
+   height: 119px;
 }
 
-#header .down-side .account-menu {
-   visibility: hidden;
-   height: 0;
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-   transition: height 1s;
-   background-color: white;
+#header .down-side .drop-down-title:hover+.drop-down-menu li {
+   display: block;
 }
 
-#header .down-side .account-menu:hover {
-   visibility: visible;
-   height: 132px;
+#header .down-side .drop-down-menu:hover {
+   height: 119px;
 }
 
-
-#header .down-side .account-menu .line {
-   display: inline-block;
-   width: max-content;
-   height: 0;
+#header .down-side .drop-down-menu:hover li {
+   display: block;
 }
 
-#header .down-side .account-menu li {
-   padding: 10px 20px;
+#header .down-side .drop-down-menu li {
+   padding: 7px 20px;
+   width: 215px
 }
 
-
-#header .down-side .account-menu li:hover {
+#header .down-side .drop-down-menu li:hover {
    background-image: linear-gradient(45deg, #cfcfcf, #ffffff);
 }
 
@@ -642,11 +644,11 @@
    animation: blink 0.4s infinite;
 }
 
-#blog .breadcrumb-sortby nav{
+#blog .breadcrumb-sortby nav {
    width: 410px;
 }
 
-#blog .breadcrumb .breadcrumb-items{
+#blog .breadcrumb .breadcrumb-items {
    display: flex;
    background: #d4fbd4;
    padding: 5px 20px;
@@ -654,22 +656,22 @@
    border: 1px solid #1f9b4b;
 }
 
-#blog .breadcrumb .breadcrumb-items:hover{
+#blog .breadcrumb .breadcrumb-items:hover {
    cursor: pointer;
 }
 
-#blog .breadcrumb .breadcrumb-items li a{
+#blog .breadcrumb .breadcrumb-items li a {
    color: black;
    text-decoration: none;
    font-size: 18px;
    font-style: italic;
 }
 
-#blog .breadcrumb .breadcrumb-items li a:hover{
+#blog .breadcrumb .breadcrumb-items li a:hover {
    color: green !important;
 }
 
-#blog .breadcrumb .breadcrumb-items .active a{
+#blog .breadcrumb .breadcrumb-items .active a {
    color: green !important;
    font-weight: 700;
 }
@@ -743,11 +745,11 @@
    transform: scale(1.2);
 }
 
-#blog .left-side .blog .blog-image:hover + .blog-content .text {
+#blog .left-side .blog .blog-image:hover+.blog-content .text {
    color: green;
 }
 
-#blog .left-side .blog .blog-image:hover + .blog-content p {
+#blog .left-side .blog .blog-image:hover+.blog-content p {
    color: green;
 }
 
