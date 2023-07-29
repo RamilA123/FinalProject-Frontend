@@ -15,7 +15,6 @@
 <body>
 
 
-
     <!--HEADER-START-->
 
     <header>
@@ -214,7 +213,10 @@
                                         <li>
                                             <a href="#">Pages</a>
                                             <div class="horizontal-line"></div>
+                                            <i class="fa-solid fa-chevron-down"></i>
                                         </li>
+
+
 
                                     </div>
 
@@ -238,14 +240,16 @@
                                     </div>
                                 </div>
 
-                                <div class="drop-down">
+                                <div class="drop-down" style="width: 85px">
 
                                     <div class="drop-down-title">
 
                                         <li>
                                             <a href="register.html">Account</a>
                                             <div class="horizontal-line"></div>
+                                            <i class="fa-solid fa-chevron-down"></i>
                                         </li>
+
 
                                     </div>
 
@@ -311,6 +315,7 @@
     <!--HEADER-END-->
 
 
+
     <!--MAIN-START-->
 
     <main>
@@ -321,7 +326,7 @@
         <section id="banner">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="banner" style="background-image: url(assets/images/banners/banner6.jpg)">
-                    <h1>Cart</h1>
+                    <h1>Shopping Cart</h1>
                 </div>
             </div>
         </section>
@@ -330,21 +335,208 @@
 
 
 
-        <!--CART-START-->
+        <!--CART-TABLE-START-->
 
-        <section id="cart" class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="cart">
+        <section id="cart-table" class="py-2">
+
+
+
+            <div class="row" style="width: 98%">
+
+                <div class="cart">
+
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                        <h1>Products</h1>
+                        <table class="table table-striped table-bordered my-5">
+                            <thead>
+                                <tr class="table-success">
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Total Price</th>
+                                    <th scope="col">Option</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+                                <tr>
+
+                                    <td class="image"><img src="assets/images/products/tomato1.png" alt=""></td>
+                                    <td class="cell">Tomato</td>
+                                    <td class="description">Tomato is the second most important vegetable crop
+                                        in the world after potato. World production and consumption of tomato has
+                                        grown quickly over the past 25 years. Current world production is about
+                                        170.75 million tons of fresh fruit produced on 5.02 million hectares in over
+                                        150 countries.</td>
+                                    <td class="quantity">
+                                        <div class="count">
+                                            <i class="fa-solid fa-plus plus"></i>
+                                            <input class="input" type="number">
+                                            <i class="fa-solid fa-minus minus"></i>
+                                        </div>
+                                    </td>
+                                    <td class="cell">$30</td>
+                                    <td class="cell">$70</td>
+                                    <td class="cell button">
+                                        <button class="btn btn-danger rounded-5">Delete</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td class="image"><img src="assets/images/products/pizza1.png" alt=""></td>
+                                    <td class="cell">Pizza</td>
+                                    <td class="description">Pizza is a dish of Italian origin, made with an oven-baked,
+                                        flat, generally round bread that is often covered with tomatoes or a
+                                        tomato-based sauce and mozzarella cheese. Other toppings are added according to
+                                        region, culture, or personal preference.</td>
+                                    <td class="quantity">
+                                        <div class="count">
+                                            <i class="fa-solid fa-plus plus"></i>
+                                            <input class="input" type="number">
+                                            <i class="fa-solid fa-minus minus"></i>
+                                        </div>
+                                    </td>
+                                    <td class="cell">$30</td>
+                                    <td class="cell">$70</td>
+                                    <td class="cell button">
+                                        <button class="btn btn-danger rounded-5">Delete</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td class="image"><img src="assets/images/products/tomato1.png" alt=""></td>
+                                    <td class="cell">Tomato</td>
+                                    <td class="description">Tomato is the second most important vegetable crop
+                                        in the world after potato. World production and consumption of tomato has
+                                        grown quickly over the past 25 years. Current world production is about
+                                        170.75 million tons of fresh fruit produced on 5.02 million hectares in over
+                                        150 countries.</td>
+                                    <td class="quantity">
+                                        <div class="count">
+                                            <i class="fa-solid fa-plus plus"></i>
+                                            <input class="input" type="number">
+                                            <i class="fa-solid fa-minus minus"></i>
+                                        </div>
+                                    </td>
+                                    <td class="cell">$30</td>
+                                    <td class="cell">$70</td>
+                                    <td class="cell button">
+                                        <button class="btn btn-danger rounded-5">Delete</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td class="image"><img src="assets/images/products/tomato1.png" alt=""></td>
+                                    <td class="cell">Tomato</td>
+                                    <td class="description">Tomato is the second most important vegetable crop
+                                        in the world after potato. World production and consumption of tomato has
+                                        grown quickly over the past 25 years. Current world production is about
+                                        170.75 million tons of fresh fruit produced on 5.02 million hectares in over
+                                        150 countries.</td>
+                                    <td class="quantity">
+                                        <div class="count">
+                                            <i class="fa-solid fa-plus plus"></i>
+                                            <input class="input" type="number">
+                                            <i class="fa-solid fa-minus minus"></i>
+                                        </div>
+                                    </td>
+                                    <td class="cell">$30</td>
+                                    <td class="cell">$70</td>
+                                    <td class="cell button">
+                                        <button class="btn btn-danger rounded-5">Delete</button>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="cart-info">
+                            <h3>Cart Information</h3>
+
+
+                            <h4>Shipping:</h4>
+
+                            <ul>
+                                <li>
+                                    <div class="input-label">
+                                        <input id="" class="form-check-input" type="checkbox">
+                                        <label for="">Free Shipping</label>
+                                    </div>
+                                    <span>$0.00</span>
+                                </li>
+                                <li>
+
+                                    <div class="input-label">
+                                        <input id="" class="form-check-input" type="checkbox">
+                                        <label for="">Standard</label>
+                                    </div>
+                                    <span>$10.00</span>
+                                </li>
+                                <li>
+                                    <div class="input-label">
+                                        <input id="" class="form-check-input" type="checkbox">
+                                        <label for="">Expresss</label>
+                                    </div>
+                                    <span>$20.00</span>
+                                </li>
+                            </ul>
+
+                            <h5>Subtotal:<span>$34</span></h5>
+
+                            <div class="payment">
+                                <h6>WE ACCEPT:</h6>
+                                <img src="assets/images/info-logos/payment.png" alt="">
+                                <p>Got a discount code? Add it in the next step.</p>
+                            </div>
+
+                            <div class="shipping-btn">
+                                <button class="btn btn-success">Proceed To Checkout </button>
+                            </div>
+
 
                         </div>
+
                     </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="cart-empty d-none">
+                <div class="alert alert-danger" role="alert">
+                    <span>Your cart is currently empty!</span>
+                    <div class="cart-icon">
+                        <img src="assets/images/info-logos/shopping-basket.png" alt="">
+                    </div>
+
+                    <p>Before proceed to checkout, you add some products to your cart. You will find a lot of
+                        interesting
+                        products on our "Shop" page.</p>
+
+                    <div class="shop-btn">
+                        <a class="btn btn-success rounded-5" href="shop.html">Return To Shop</a>
+                    </div>
+
                 </div>
             </div>
+
         </section>
 
-        <!--CART-END-->
+        <!--CART-TABLE-END-->
 
 
 
