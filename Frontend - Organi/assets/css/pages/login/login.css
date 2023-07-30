@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: myFourthFont;
-    src: url(../../../fonts/Poppins//Poppins-ExtraLightItalic.ttf);
+    src: url(../../../fonts/Poppins/Poppins-Regular.ttf);
 }
 
 /* FONTS-END */
@@ -482,16 +482,16 @@
     display: flex;
     list-style-type: none;
     margin: 0;
-    gap: 75px;
+    gap: 90px;
     padding: 0;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 #header .down-side .menu ul li {
     cursor: pointer;
 }
 
-#header .down-side .menu ul li a {
+#header .down-side .menu ul a {
     font-family: myFirstFont;
     font-size: 17px;
     text-decoration: none;
@@ -511,7 +511,7 @@
     width: 100%;
 }
 
-#header .down-side .menu ul li a:hover {
+#header .down-side .menu ul a:hover {
     color: green
 }
 
@@ -583,6 +583,7 @@
     position: relative;
     display: flex;
     gap: 15%;
+    margin-left: 60px;
 }
 
 #header .down-side .info .title span:nth-child(1) {
@@ -744,8 +745,8 @@
     position: absolute;
     right: 45px;
     top: 50px;
-    font-size: 18px;
-    color: #5a5a5a;
+    font-size: 17px;
+    color: #6e6e6e;
     z-index: 1;
 }
 
@@ -757,7 +758,7 @@
     position: absolute;
     width: 24px;
     height: 2px;
-    background-color: #5a5a5a;
+    background-color: #727272;
     right: 43px;
     top: 58px;
     transform: rotate(30deg);

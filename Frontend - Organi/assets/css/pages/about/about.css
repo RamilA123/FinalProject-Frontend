@@ -1,23 +1,23 @@
 /* FONTS-START */
 
 @font-face {
-   font-family: myFirstFont;
-   src: url(../../../fonts/Poppins/Poppins-Italic.ttf);
+    font-family: myFirstFont;
+    src: url(../../../fonts/Poppins/Poppins-Italic.ttf);
 }
 
 @font-face {
-   font-family: mySecondFont;
-   src: url(../../../fonts/Roboto/Roboto-Medium.ttf);
+    font-family: mySecondFont;
+    src: url(../../../fonts/Roboto/Roboto-Medium.ttf);
 }
 
 @font-face {
-   font-family: myThirdFont;
-   src: url(../../../fonts/Montserrat/Montserrat-Italic.ttf);
+    font-family: myThirdFont;
+    src: url(../../../fonts/Montserrat/Montserrat-Italic.ttf);
 }
 
 @font-face {
-   font-family: myFourthFont;
-   src: url(../../../fonts/Poppins//Poppins-ExtraLightItalic.ttf);
+    font-family: myFourthFont;
+    src: url(../../../fonts/Poppins/Poppins-Regular.ttf);
 }
 
 /* FONTS-END */
@@ -26,156 +26,156 @@
 
 /* ANIMATIONS-START */
 @keyframes blink {
-   50% {
-      color: rgb(0, 194, 0)
-   }
+    50% {
+        color: rgb(0, 194, 0)
+    }
 }
 
 @keyframes blink-facebook {
-   50% {
-      color: rgb(17, 0, 255);
-   }
+    50% {
+        color: rgb(17, 0, 255);
+    }
 }
 
 @keyframes blink-twitter {
-   50% {
-      color: rgb(0, 247, 255);
-   }
+    50% {
+        color: rgb(0, 247, 255);
+    }
 }
 
 @keyframes blink-instagram {
-   50% {
-      color: rgb(200, 14, 224);
-   }
+    50% {
+        color: rgb(200, 14, 224);
+    }
 }
 
 @keyframes blink-linked-in {
-   50% {
-      color: rgb(28, 20, 148);
-   }
+    50% {
+        color: rgb(28, 20, 148);
+    }
 }
 
 @keyframes blink-pinterest {
-   50% {
-      color: rgb(211, 101, 119)
-   }
+    50% {
+        color: rgb(211, 101, 119)
+    }
 }
 
 @keyframes blink-youtube {
-   50% {
-      color: rgb(255, 0, 0)
-   }
+    50% {
+        color: rgb(255, 0, 0)
+    }
 }
 
 @keyframes blink-google {
-   50% {
-      color: rgb(255, 123, 0)
-   }
+    50% {
+        color: rgb(255, 123, 0)
+    }
 }
 
 @keyframes blink-menu {
-   50% {
-      color: white;
-   }
+    50% {
+        color: white;
+    }
 }
 
 @keyframes text {
 
-   from {
-      left: 120px;
-   }
+    from {
+        left: 120px;
+    }
 
-   to {
-      left: 0;
-   }
+    to {
+        left: 0;
+    }
 }
 
 @keyframes info {
 
-   from {
-      top: 100px;
-   }
+    from {
+        top: 100px;
+    }
 
-   to {
-      top: 0;
-   }
+    to {
+        top: 0;
+    }
 }
 
 @keyframes animation-text-on-image1 {
 
-   from {
-      top: 500px;
-   }
+    from {
+        top: 500px;
+    }
 
-   to {
-      top: 133px
-   }
+    to {
+        top: 133px
+    }
 }
 
 @keyframes animation-text-on-image2 {
 
-   from {
-      top: 500px;
-   }
+    from {
+        top: 500px;
+    }
 
-   to {
-      top: 150px
-   }
+    to {
+        top: 150px
+    }
 }
 
 @keyframes glide1 {
-   from {
-      top: 100px;
-      left: 0;
-   }
+    from {
+        top: 100px;
+        left: 0;
+    }
 
-   to {
-      top: 140px;
-      left: 0;
-   }
+    to {
+        top: 140px;
+        left: 0;
+    }
 }
 
 @keyframes glide2 {
-   from {
-      top: 50px;
-      right: 0;
+    from {
+        top: 50px;
+        right: 0;
 
-   }
+    }
 
-   to {
-      top: 0;
-      right: 0;
-   }
+    to {
+        top: 0;
+        right: 0;
+    }
 }
 
 @keyframes text-effect {
-   10% {
-      opacity: 0.5;
-   }
+    10% {
+        opacity: 0.5;
+    }
 
-   20% {
-      opacity: 1;
-   }
+    20% {
+        opacity: 1;
+    }
 
-   80% {
-      opacity: 1;
-      top: 0;
-   }
+    80% {
+        opacity: 1;
+        top: 0;
+    }
 
-   90% {
-      opacity: 0.5;
-   }
+    90% {
+        opacity: 0.5;
+    }
 
-   100% {
-      opacity: 0;
-      top: 100px;
-   }
+    100% {
+        opacity: 0;
+        top: 100px;
+    }
 }
 
 @keyframes border-animation {
-   50% {
-      border-color: rgb(9, 223, 9);
-   }
+    50% {
+        border-color: rgb(9, 223, 9);
+    }
 }
 
 /* ANIMATIONS-END */
@@ -183,452 +183,452 @@
 /*----------------------------------------------------------------*/
 
 #header .upper-side {
-   background: #000000;
+    background: #000000;
 }
 
 #header .upper-side .service {
-   padding: 10px 0;
-   color: white;
-   font-size: 17px;
-   animation: blink 0.4s infinite;
-   cursor: pointer;
+    padding: 10px 0;
+    color: white;
+    font-size: 17px;
+    animation: blink 0.4s infinite;
+    cursor: pointer;
 }
 
 
 #header .upper-side .social-medias {
-   display: flex;
-   gap: 5%;
-   justify-content: right;
-   font-size: 19px;
-   padding: 10px 0;
+    display: flex;
+    gap: 5%;
+    justify-content: right;
+    font-size: 19px;
+    padding: 10px 0;
 }
 
 #header .upper-side .social-medias:hover {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 .fa-facebook-f {
-   color: #00307800;
-   animation: blink-facebook 0.3s infinite;
+    color: #00307800;
+    animation: blink-facebook 0.3s infinite;
 }
 
 .fa-twitter {
-   color: #005c79;
-   animation: blink-twitter 0.3s infinite;
+    color: #005c79;
+    animation: blink-twitter 0.3s infinite;
 }
 
 .fa-instagram {
-   color: #500078;
-   animation: blink-instagram 0.3s infinite;
+    color: #500078;
+    animation: blink-instagram 0.3s infinite;
 }
 
 .fa-linkedin-in {
-   color: #5252ff;
-   animation: blink-linked-in 0.3s infinite;
+    color: #5252ff;
+    animation: blink-linked-in 0.3s infinite;
 }
 
 .fa-pinterest-p {
-   color: #fd002a;
-   animation: blink-pinterest 0.3s infinite;
+    color: #fd002a;
+    animation: blink-pinterest 0.3s infinite;
 }
 
 #header .middle-side {
-   background-image: linear-gradient(45deg, #f1eeee, #ffffff);
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 200px;
+    background-image: linear-gradient(45deg, #f1eeee, #ffffff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
 }
 
 #header .middle-side .right-side {
-   display: flex;
+    display: flex;
 }
 
 #header .middle-side .logo {
-   width: 150px;
-   height: 60px;
-   margin: 60px 8%;
-   transition: transform 0.4s;
+    width: 150px;
+    height: 60px;
+    margin: 60px 8%;
+    transition: transform 0.4s;
 }
 
 #header .middle-side .logo img {
-   width: 100%;
-   height: 100%;
-   cursor: pointer;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 #header .middle-side .logo:hover {
-   transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 #header .middle-side .account {
-   display: flex;
-   margin-top: 70px;
-   height: 40px;
-   gap: 13px;
+    display: flex;
+    margin-top: 70px;
+    height: 40px;
+    gap: 13px;
 }
 
 #header .middle-side a {
-   text-decoration: none;
+    text-decoration: none;
 }
 
 #header .middle-side .account:hover {
-   color: #186618;
-   cursor: pointer;
+    color: #186618;
+    cursor: pointer;
 }
 
 #header .middle-side .account .login {
-   margin-top: 6px;
-   font-size: 16px;
-   text-decoration: none;
-   color: #186618;
-   font-weight: 500;
+    margin-top: 6px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #186618;
+    font-weight: 500;
 }
 
 #header .middle-side .account .image {
-   width: 40px;
-   height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 #header .middle-side .account .image img {
-   width: 100%;
-   height: 100%;
-   border-radius: 50%;
-   cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 
 #header .middle-side .items {
-   display: flex;
-   gap: 5%;
-   margin-top: 22%;
-   font-size: 20px;
+    display: flex;
+    gap: 5%;
+    margin-top: 22%;
+    font-size: 20px;
 }
 
 #header .middle-side .items .icons {
-   display: flex;
-   margin-top: 15px;
-   height: max-content;
+    display: flex;
+    margin-top: 15px;
+    height: max-content;
 }
 
 #header .middle-side .items .icons:hover {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 
 #header .middle-side .items .icons svg:hover {
-   color: #54b72b;
+    color: #54b72b;
 }
 
 #header .middle-side .items .icons sup {
-   background: #0ad50a;
-   padding: 0px 5px;
-   border-radius: 10px;
-   font-size: 12px;
-   top: -10px;
-   right: 15px;
+    background: #0ad50a;
+    padding: 0px 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    top: -10px;
+    right: 15px;
 }
 
 #header .middle-side .items .icons a svg {
-   cursor: pointer;
-   color: black;
+    cursor: pointer;
+    color: black;
 }
 
 #header .middle-side .flags {
-   padding: 10px;
+    padding: 10px;
 }
 
 #header .middle-side .flags .country-flag {
-   display: flex;
-   gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 #header .middle-side .flags .country-flag span {
-   margin-top: 2px;
-   font-weight: 500;
+    margin-top: 2px;
+    font-weight: 500;
 }
 
 #header .middle-side .flags .country-flag .turkey {
-   margin-left: 2px;
+    margin-left: 2px;
 }
 
 #header .middle-side .flags .country-flag:hover {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 #header .middle-side .flags .flag-item {
-   padding: 0 10px;
-   border-radius: inherit;
+    padding: 0 10px;
+    border-radius: inherit;
 }
 
 #header .middle-side .flags .flag-item:hover {
-   background: #afafaf;
+    background: #afafaf;
 }
 
 #header .middle-side .flags .image {
-   width: 30px;
+    width: 30px;
 }
 
 #header .middle-side .flags .image img {
-   width: 100%;
-   height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 #header .middle-side .flags .flag-header {
-   padding: 0 10px;
-   border-radius: 15px;
-   background: #bbbbbb80;
-   border: 1px solid #00000047;
+    padding: 0 10px;
+    border-radius: 15px;
+    background: #bbbbbb80;
+    border: 1px solid #00000047;
 
 }
 
 #header .middle-side .flags .flag-content {
-   height: 0;
-   transition: height 0.5s;
-   margin-top: 5px;
-   border-radius: 15px;
-   background: #bbbbbb80;
-   border: 1px solid #00000047;
-   padding: 4px 3px;
+    height: 0;
+    transition: height 0.5s;
+    margin-top: 5px;
+    border-radius: 15px;
+    background: #bbbbbb80;
+    border: 1px solid #00000047;
+    padding: 4px 3px;
 }
 
 #header .middle-side .flags svg {
-   position: relative;
-   right: 5px;
-   top: 4px;
-   font-size: 13px;
+    position: relative;
+    right: 5px;
+    top: 4px;
+    font-size: 13px;
 }
 
 #header .middle-side .search {
-   position: relative;
-   margin-top: 70px;
-   height: 55px;
-   border-top-left-radius: 25px;
-   border-bottom-left-radius: 25px;
+    position: relative;
+    margin-top: 70px;
+    height: 55px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 #header .middle-side .search button {
-   position: absolute;
-   top: 12px;
-   right: 23px;
-   color: #e3d5d5;
-   border: 0;
-   background: none;
+    position: absolute;
+    top: 12px;
+    right: 23px;
+    color: #e3d5d5;
+    border: 0;
+    background: none;
 }
 
 #header .middle-side .search svg:hover {
-   color: #38f938;
+    color: #38f938;
 }
 
 #header .middle-side .search .search-design1 {
-   background-color: #4d4646;
-   width: 50px;
-   height: 50px;
-   left: 11px;
-   border-radius: inherit;
-   position: absolute;
-   bottom: 5px;
+    background-color: #4d4646;
+    width: 50px;
+    height: 50px;
+    left: 11px;
+    border-radius: inherit;
+    position: absolute;
+    bottom: 5px;
 }
 
 #header .middle-side .search .search-design2 {
-   background-color: #4d4646;
-   width: 50px;
-   height: 50px;
-   right: 12px;
-   position: absolute;
+    background-color: #4d4646;
+    width: 50px;
+    height: 50px;
+    right: 12px;
+    position: absolute;
 }
 
 #header .middle-side .search .search-design2:hover {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 #header .middle-side .search form {
-   border-radius: inherit;
+    border-radius: inherit;
 }
 
 #header .middle-side .search input {
-   height: 50px;
-   border-radius: inherit;
-   box-shadow: none;
-   padding-left: 65px;
-   color: gray;
-   font-style: italic;
-   border-color: #c1c1c1;
+    height: 50px;
+    border-radius: inherit;
+    box-shadow: none;
+    padding-left: 65px;
+    color: gray;
+    font-style: italic;
+    border-color: #c1c1c1;
 }
 
 #header .middle-side .search input:focus {
-   border-color: #383838;
+    border-color: #383838;
 }
 
 
 #header .middle-side .search input::placeholder {
-   font-size: 15px;
-   font-style: italic;
+    font-size: 15px;
+    font-style: italic;
 }
 
 #header .down-side {
-   background: #bbbbbb80;
-   height: 90px;
-   border-top: 1px solid #d9d9d9;
-   padding-top: 20px;
+    background: #bbbbbb80;
+    height: 90px;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 20px;
 }
 
 #header .down-side .menu {
-   position: relative;
-   animation: text 0.5s;
-   margin-top: 10px;
+    position: relative;
+    animation: text 0.5s;
+    margin-top: 10px;
 }
 
 #header .down-side .menu ul {
-   display: flex;
-   list-style-type: none;
-   margin: 0;
-   gap: 75px;
-   padding: 0;
-   margin-left: 80px;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    gap: 90px;
+    padding: 0;
+    margin-left: 50px;
 }
 
 #header .down-side .menu ul li {
-   cursor: pointer;
+    cursor: pointer;
 }
 
-#header .down-side .menu ul li a {
-   font-family: myFirstFont;
-   font-size: 17px;
-   text-decoration: none;
-   letter-spacing: 2px;
-   font-weight: bolder;
-   color: black;
+#header .down-side .menu ul a {
+    font-family: myFirstFont;
+    font-size: 17px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: black;
 }
 
 #header .down-side .menu ul li .horizontal-line {
-   width: 0;
-   height: 1px;
-   border-bottom: 2px solid green;
-   transition: width 0.3s;
+    width: 0;
+    height: 1px;
+    border-bottom: 2px solid green;
+    transition: width 0.3s;
 }
 
 #header .down-side .menu ul li a:hover+.horizontal-line {
-   width: 100%;
+    width: 100%;
 }
 
-#header .down-side .menu ul li a:hover {
-   color: green
+#header .down-side .menu ul a:hover {
+    color: green
 }
 
 #header .down-side .drop-down {
-   width: 60px;
+    width: 60px;
 }
 
 #header .down-side .drop-down.drop {
-   width: 85px;
+    width: 85px;
 }
 
 #header .down-side .drop-down-menu {
-   position: relative;
-   z-index: 1;
-   height: 0;
-   transition: height 0.5s;
-   background-color: white;
-   width: 215px;
+    position: relative;
+    z-index: 1;
+    height: 0;
+    transition: height 0.5s;
+    background-color: white;
+    width: 215px;
 }
 
 #header .down-side .drop-down-menu li {
-   display: none;
+    display: none;
 }
 
 #header .down-side .drop-down-title {
-   position: relative;
-   padding-bottom: 32px;
+    position: relative;
+    padding-bottom: 32px;
 }
 
-#header .down-side .drop-down svg{
-   position: absolute;
-   top: 4px;
-   right: -22px;
-   font-size: 13px;
-   padding-bottom: 32px;
-   padding-left: 10px;
+#header .down-side .drop-down svg {
+    position: absolute;
+    top: 4px;
+    right: -22px;
+    font-size: 13px;
+    padding-bottom: 32px;
+    padding-left: 10px;
 }
 
 #header .down-side .drop-down-title:hover {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 #header .down-side .drop-down-title:hover+.drop-down-menu {
-   height: 119px;
+    height: 119px;
 }
 
 #header .down-side .drop-down-title:hover+.drop-down-menu li {
-   display: block;
+    display: block;
 }
 
 #header .down-side .drop-down-menu:hover {
-   height: 119px;
+    height: 119px;
 }
 
 #header .down-side .drop-down-menu:hover li {
-   display: block;
+    display: block;
 }
 
 #header .down-side .drop-down-menu li {
-   padding: 7px 20px;
-   width: 215px
+    padding: 7px 20px;
+    width: 215px
 }
 
 #header .down-side .drop-down-menu li:hover {
-   background-image: linear-gradient(45deg, #cfcfcf, #ffffff);
+    background-image: linear-gradient(45deg, #cfcfcf, #ffffff);
 }
 
 #header .down-side .info {
-   position: relative;
-   display: flex;
-   gap: 15%;
+    position: relative;
+    display: flex;
+    gap: 15%;
+    margin-left: 60px;
 }
 
 #header .down-side .info .title span:nth-child(1) {
-   font-style: italic;
-   font-weight: bolder;
+    font-style: italic;
+    font-weight: bolder;
 }
 
 #header .down-side .info a {
-   text-decoration: none;
-   color: black;
+    text-decoration: none;
+    color: black;
 }
 
 #header .down-side .info .content {
-   display: flex;
-   gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 #header .down-side .info .content:hover {
-   color: green;
-   cursor: pointer;
+    color: green;
+    cursor: pointer;
 }
 
 #header .down-side .info .content img {
-   transition: transform 0.4s;
+    transition: transform 0.4s;
 }
 
 #header .down-side .info .content:hover img {
-   transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 #header .down-side .info .phone-number svg {
-   margin-top: 15px;
-   font-size: 20px;
+    margin-top: 15px;
+    font-size: 20px;
 }
 
 #header .down-side .info .image {
-   width: 25px;
-   height: 25px;
+    width: 25px;
+    height: 25px;
 }
 
 #header .down-side .info .image img {
-   width: 100%;
-   height: 100%;
-   margin-top: 15px;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
 }
-
 #banner .banner {
    background-repeat: no-repeat;
    background-size: cover;

@@ -27,154 +27,154 @@
 /* ANIMATIONS-START */
 @keyframes blink {
    50% {
-      color: rgb(0, 194, 0)
+       color: rgb(0, 194, 0)
    }
 }
 
 @keyframes blink-facebook {
    50% {
-      color: rgb(17, 0, 255);
+       color: rgb(17, 0, 255);
    }
 }
 
 @keyframes blink-twitter {
    50% {
-      color: rgb(0, 247, 255);
+       color: rgb(0, 247, 255);
    }
 }
 
 @keyframes blink-instagram {
    50% {
-      color: rgb(200, 14, 224);
+       color: rgb(200, 14, 224);
    }
 }
 
 @keyframes blink-linked-in {
    50% {
-      color: rgb(28, 20, 148);
+       color: rgb(28, 20, 148);
    }
 }
 
 @keyframes blink-pinterest {
    50% {
-      color: rgb(211, 101, 119)
+       color: rgb(211, 101, 119)
    }
 }
 
 @keyframes blink-youtube {
    50% {
-      color: rgb(255, 0, 0)
+       color: rgb(255, 0, 0)
    }
 }
 
 @keyframes blink-google {
    50% {
-      color: rgb(255, 123, 0)
+       color: rgb(255, 123, 0)
    }
 }
 
 @keyframes blink-menu {
    50% {
-      color: white;
+       color: white;
    }
 }
 
 @keyframes text {
 
    from {
-      left: 120px;
+       left: 120px;
    }
 
    to {
-      left: 0;
+       left: 0;
    }
 }
 
 @keyframes info {
 
    from {
-      top: 100px;
+       top: 100px;
    }
 
    to {
-      top: 0;
+       top: 0;
    }
 }
 
 @keyframes animation-text-on-image1 {
 
    from {
-      top: 500px;
+       top: 500px;
    }
 
    to {
-      top: 133px
+       top: 133px
    }
 }
 
 @keyframes animation-text-on-image2 {
 
    from {
-      top: 500px;
+       top: 500px;
    }
 
    to {
-      top: 150px
+       top: 150px
    }
 }
 
 @keyframes glide1 {
    from {
-      top: 100px;
-      left: 0;
+       top: 100px;
+       left: 0;
    }
 
    to {
-      top: 140px;
-      left: 0;
+       top: 140px;
+       left: 0;
    }
 }
 
 @keyframes glide2 {
    from {
-      top: 50px;
-      right: 0;
+       top: 50px;
+       right: 0;
 
    }
 
    to {
-      top: 0;
-      right: 0;
+       top: 0;
+       right: 0;
    }
 }
 
 @keyframes text-effect {
    10% {
-      opacity: 0.5;
+       opacity: 0.5;
    }
 
    20% {
-      opacity: 1;
+       opacity: 1;
    }
 
    80% {
-      opacity: 1;
-      top: 0;
+       opacity: 1;
+       top: 0;
    }
 
    90% {
-      opacity: 0.5;
+       opacity: 0.5;
    }
 
    100% {
-      opacity: 0;
-      top: 100px;
+       opacity: 0;
+       top: 100px;
    }
 }
 
 @keyframes border-animation {
    50% {
-      border-color: rgb(9, 223, 9);
+       border-color: rgb(9, 223, 9);
    }
 }
 
@@ -482,16 +482,16 @@
    display: flex;
    list-style-type: none;
    margin: 0;
-   gap: 75px;
+   gap: 90px;
    padding: 0;
-   margin-left: 80px;
+   margin-left: 50px;
 }
 
 #header .down-side .menu ul li {
    cursor: pointer;
 }
 
-#header .down-side .menu ul li a {
+#header .down-side .menu ul a {
    font-family: myFirstFont;
    font-size: 17px;
    text-decoration: none;
@@ -511,7 +511,7 @@
    width: 100%;
 }
 
-#header .down-side .menu ul li a:hover {
+#header .down-side .menu ul a:hover {
    color: green
 }
 
@@ -583,6 +583,7 @@
    position: relative;
    display: flex;
    gap: 15%;
+   margin-left: 60px;
 }
 
 #header .down-side .info .title span:nth-child(1) {
@@ -783,15 +784,11 @@ label {
 }
 
 #cart-table .table {
-   --bs-table-bg: #257648fc;
+   --bs-table-bg: #348959fc;
 }
 
 #cart-table .table-success {
-   --bs-table-bg: #daffee;
-}
-
-#cart-table .table tr {
-   border-color: #25d934;
+   --bs-table-bg: white;
 }
 
 #cart-table h1 {
@@ -822,6 +819,12 @@ label {
 
 #cart-table .table .image img {
    width: 100%;
+   transition: all 0.4s;
+}
+
+#cart-table .table .image img:hover {
+   cursor: pointer;
+   transform: scale(1.2);
 }
 
 #cart-table .table .cell {
@@ -831,7 +834,6 @@ label {
 #cart-table .table .quantity {
    padding: 70px 35px;
 }
-
 
 #cart-table .table .description {
    padding: 25px;
@@ -927,23 +929,22 @@ input::-webkit-outer-spin-button {
 
 #cart-table .cart-empty .alert .shop-btn {
    text-align: center;
-   margin-top: 100px;
    margin-bottom: 50px;
 }
 
 #cart-table .cart-empty .alert .shop-btn a {
-   padding: 5px 40px;
-   font-size: 25px;
+   padding: 5px 25px;
+   font-size: 20px;
    font-family: serif;
    border: none;
    color: #ededed;
    font-family: cursive;
    font-style: italic;
-   background-image: linear-gradient(to bottom, #1e641e, #5ebd5e, #208320);
+   background: #2da52d;
 }
 
 #cart-table .cart-empty .alert .shop-btn a:hover {
-   background-image: linear-gradient(to bottom, #2ad12a, #417c41, #1cb91c);
+   background-color: #1c781f;
 }
 
 
