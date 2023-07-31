@@ -46,7 +46,6 @@ for (const flag of flags) {
 }
 // FLAG
 
-
 //UP-ARROW
 let upArrow = document.querySelector(".up-arrow");
 
@@ -56,25 +55,58 @@ upArrow.addEventListener("click", function () {
 //UP-ARROW
 
 
-//LOGIN-EYE-ICON-START
+//DROPDOWN-MENU-START
+let dropdownTitles = document.querySelectorAll(".drop-down-title")
+let dropdownMenues = document.querySelectorAll(".drop-down-menu")
 
-$(document).ready(function(){
-
-    $(document).on("click","#login .eye",function(){
-      let type = $(this).prev().attr("type");
-  
-      if (type == "password"){
-          $(this).prev().attr("type","text");
-          $(this).next().removeClass("line");
-      }
-      
-      else{
-          $(this).prev().attr("type","password");
-          $(this).next().addClass("line");
-      }
+for (const dropdown of dropdownTitles) {
+    dropdown.addEventListener("mouseover", function () {
+        this.firstElementChild.children[0].style.color = "green";
+        this.firstElementChild.children[1].style.width = "100%";
+        this.firstElementChild.children[2].style.color = "green";
     })
-  
-  })
-  
-  //LOGIN-EYE-ICON-END
+
+    dropdown.addEventListener("mouseout", function () {
+        this.firstElementChild.children[0].style.color = "";
+        this.firstElementChild.children[1].style.width = "0%";
+        this.firstElementChild.children[2].style.color = "";
+    })
+}
+
+for (const dropdown of dropdownMenues) {
+    dropdown.addEventListener("mouseover", function () {
+        this.previousElementSibling.firstElementChild.children[0].style.color = "green";
+        this.previousElementSibling.firstElementChild.children[1].style.width = "100%";
+        this.previousElementSibling.firstElementChild.children[2].style.color = "green";
+    })
+
+    dropdown.addEventListener("mouseout", function () {
+        this.previousElementSibling.firstElementChild.children[0].style.color = "";
+        this.previousElementSibling.firstElementChild.children[1].style.width = "0%";
+        this.previousElementSibling.firstElementChild.children[2].style.color = "";
+    })
+}
+//DROPDOWN-MENU-END
+
+
+
+//LOGIN-EYE-ICON-START
+$(document).ready(function () {
+
+    $(document).on("click", "#login .eye", function () {
+        let type = $(this).prev().attr("type");
+
+        if (type == "password") {
+            $(this).prev().attr("type", "text");
+            $(this).next().removeClass("line");
+        }
+
+        else {
+            $(this).prev().attr("type", "password");
+            $(this).next().addClass("line");
+        }
+    })
+
+})
+//LOGIN-EYE-ICON-END
 

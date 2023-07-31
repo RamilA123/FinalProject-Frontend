@@ -474,7 +474,7 @@
 
 #header .down-side .menu {
    position: relative;
-   animation: text 0.5s;
+   animation: text 0.4s;
    margin-top: 10px;
 }
 
@@ -507,12 +507,12 @@
    transition: width 0.3s;
 }
 
-#header .down-side .menu ul li a:hover+.horizontal-line {
-   width: 100%;
+#header .down-side .menu ul a:hover {
+   color: green;
 }
 
-#header .down-side .menu ul a:hover {
-   color: green
+#header .down-side .menu ul a:hover + .horizontal-line {
+   width: 100%;
 }
 
 #header .down-side .drop-down {
@@ -527,8 +527,8 @@
    position: relative;
    z-index: 1;
    height: 0;
-   transition: height 0.5s;
-   background-color: white;
+   transition: height 0.3s ease-in-out;
+   background: white;
    width: 215px;
 }
 
@@ -576,7 +576,7 @@
 }
 
 #header .down-side .drop-down-menu li:hover {
-   background-image: linear-gradient(45deg, #cfcfcf, #ffffff);
+   background-image: linear-gradient(45deg, #d3d3d3, #dbdada);
 }
 
 #header .down-side .info {
@@ -947,35 +947,10 @@ input::-webkit-outer-spin-button {
    background-color: #1c781f;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #footer .bg-image {
-   background-image: url(../../../images/backgrounds/background4.png);
    background-repeat: no-repeat;
    background-size: cover;
    width: 100%;
-   height: 595px;
 }
 
 #footer .upper-side {
@@ -1140,7 +1115,7 @@ input::-webkit-outer-spin-button {
 #footer .down-side {
    display: flex;
    justify-content: space-around;
-   margin-top: 23px;
+   margin-top: 15px;
 }
 
 #footer .down-side .right-side ul {
