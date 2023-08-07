@@ -88,3 +88,23 @@ for (const dropdown of dropdownMenues) {
 }
 
 //DROPDOWN-MENU-END
+
+//RESET-PASSWORD-EYE-ICON-START
+$(document).ready(function () {
+
+    $(document).on("click", "#reset-password .eye", function () {
+        let type = $(this).prev().attr("type");
+
+        if (type == "password") {
+            $(this).prev().attr("type", "text");
+            $(this).next().removeClass("line");
+        }
+
+        else {
+            $(this).prev().attr("type", "password");
+            $(this).next().addClass("line");
+        }
+    })
+
+})
+//RESET-PASSWORD-EYE-ICON-END

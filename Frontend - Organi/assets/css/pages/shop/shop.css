@@ -722,7 +722,6 @@
    padding: 15px;
    border-radius: 18px;
    border: 2px solid black;
-   animation: border-animation 0.4s infinite;
    background: #cbffcb;
 }
 
@@ -1094,7 +1093,8 @@
 }
 
 #filtering .pagination {
-   margin-left: 26%;
+   margin-left: 40%;
+   margin-top: 15px;
 }
 
 #filtering .pagination li {

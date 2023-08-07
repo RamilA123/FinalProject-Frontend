@@ -125,7 +125,7 @@ $(document).ready(function () {
 
 
 //COUNTDOWN
-const targetDate = new Date("2023-07-30 23:59:59").getTime();
+const targetDate = new Date("2023-09-03 23:59:59").getTime();
 
 const countdownInterval = setInterval(function () {
 
