@@ -692,11 +692,11 @@
 }
 
 #about .left-side {
-    margin-top: 45px;
+    margin-top: 52px;
 }
 
 #about .left-side .about-image {
-    width: 665px;
+    width: 635px;
     height: 440px;
     border-radius: 40px;
     overflow: hidden;
@@ -715,12 +715,12 @@
 }
 
 #about .right-side {
-    margin-left: 40px;
+    margin-left: 20px;
     background-image: linear-gradient(to bottom, #11a330, #66cd54, #00af15);
-    padding: 15px;
     border-radius: 20px;
     color: black;
     font-family: sans-serif;
+    width: 650px;
 }
 
 #about .right-side:hover {
@@ -743,15 +743,24 @@
 #about .right-side .about-description p {
     font-size: 22px;
     font-family: cursive;
+    width: 580px;
+    margin: 0 auto;
 }
 
 #about .about-content {
     text-align: center;
+    padding: 20px 10px;
 }
 
 #about .about-services {
     display: flex;
     font-style: italic;
+    padding: 0 27px;
+}
+
+#about .about-services .service-item {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #about .service {

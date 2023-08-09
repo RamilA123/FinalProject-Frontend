@@ -108,7 +108,7 @@
    }
 
    to {
-       top: 133px
+       top: 110px;
    }
 }
 
@@ -710,12 +710,12 @@
    filter: brightness(1);
 }
 
-#contact .contact-image p {
+#contact .contact-image .contact-content {
    position: absolute;
-   top: 133px;
+   top: 110px;
    color: white;
-   left: 115px;
-   font-size: 22px;
+   left: 90px;
+   font-size: 25px;
    font-weight: 600;
    font-style: italic;
    text-align: center;
@@ -723,14 +723,17 @@
    display: none;
 }
 
+#contact .contact-image .contact-content p {
+   margin: 10px 0;
+}
+
+
 #contact .contact-image:hover img {
    transform: scale(1.2);
    filter: brightness(0.7);
 }
 
-#contact .contact-image:hover p {
-   transform: scale(1.2);
-   filter: brightness(1);
+#contact .contact-image:hover .contact-content {
    animation: animation-text-on-image1 0.9s ease;
    display: block;
 }

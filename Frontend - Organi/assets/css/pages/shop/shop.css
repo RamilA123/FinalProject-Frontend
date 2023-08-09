@@ -852,6 +852,25 @@
    flex-wrap: wrap;
 }
 
+#filtering .products .product-out-of-stock {
+   filter: brightness(0.7);
+}
+
+#filtering .products .out-of-stock {
+   background: #11421d;
+   color: red;
+   padding: 20px 50px;
+   font-size: 22px;
+   top: 22%;
+   margin-left: 13px;
+   transform: rotate(40deg);
+   font-weight: 500;
+   border-radius: 35px;
+   left: 10px;
+   position: absolute;
+   font-weight: 700;
+}
+
 #filtering .products .tab-content a {
    color: black;
    text-decoration: none;
@@ -923,9 +942,18 @@
    display: inline-block;
 }
 
+#filtering .products .tab-content .product-add-to-wishlist:hover .no-wishlist{
+   font-size: 14px;
+   display: none;
+}
+
 #filtering .products .tab-content .product-add-to-wishlist svg {
    padding: 0 2px;
    animation: blink 0.5s infinite;
+}
+
+#filtering .products .tab-content .product-add-to-wishlist .stop-animation{
+   animation: none;
 }
 
 #filtering .products .tab-content .product-add-to-wishlist a {
@@ -961,6 +989,10 @@
 
 #filtering .products .tab-content .product-shuffle-eyeglasses svg {
    display: none;
+}
+
+#filtering .products .tab-content .product:hover .product-shuffle-eyeglasses .stop-animation {
+   animation: none;
 }
 
 #filtering .products .tab-content .product:hover .product-shuffle-eyeglasses {
@@ -1001,6 +1033,10 @@
    font-size: 15px;
    color: white;
    animation: blink 0.5s infinite;
+}
+
+#filtering .products .tab-content .product-featured .stop-animation {
+   animation: none;
 }
 
 #filtering .products .tab-content .product-content {
@@ -1059,10 +1095,18 @@
    background: green;
 }
 
+#filtering .products .tab-content .product-content .no-hover:hover {
+   background: #37b937;
+}
+
 #filtering .products .tab-content .product-content .product-add-to-cart svg {
    margin-right: 10px;
    color: white;
    animation: blink 0.5s infinite;
+}
+
+#filtering .products .tab-content .product-content .product-add-to-cart .stop-animation {
+   animation: none;
 }
 
 #filtering .sort-by {
