@@ -1004,7 +1004,7 @@
    color: red;
    padding: 20px 50px;
    font-size: 22px;
-   top: 22%;
+   top: 40%;
    margin-left: 13px;
    transform: rotate(40deg);
    font-weight: 500;
@@ -1012,6 +1012,8 @@
    left: 10px;
    position: absolute;
    font-weight: 700;
+   z-index: 1;
+   
 }
 
 .products .tab-content .tab {
@@ -1452,7 +1454,7 @@
    font-size: 35px;
    position: absolute;
    bottom: 35%;
-   left: 12%;
+   left: 10%;
 }
 
 #countdown .countdown .countdown-timer .countdown-item {

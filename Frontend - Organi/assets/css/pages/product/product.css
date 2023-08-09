@@ -684,8 +684,8 @@
 }
 
 #product-detail .detail-images img {
-    width: 30%;
-    height: 30%;
+    width: 130px;
+    height: 120px;
     margin-left: 40px;
     border-radius: 30px;
     padding: 5px 10px;
@@ -718,8 +718,12 @@
     font-weight: 500;
 }
 
+#product-detail .product .product-price .discount {
+    margin-left: 20px;
+}
+
 #product-detail .product .product-price span:nth-child(1) {
-    text-decoration: 1px line-through red;
+    text-decoration: 2px line-through red;
     color: red;
 }
 

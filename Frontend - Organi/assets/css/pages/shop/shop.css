@@ -861,7 +861,7 @@
    color: red;
    padding: 20px 50px;
    font-size: 22px;
-   top: 22%;
+   top: 40%;
    margin-left: 13px;
    transform: rotate(40deg);
    font-weight: 500;
@@ -869,6 +869,7 @@
    left: 10px;
    position: absolute;
    font-weight: 700;
+   z-index: 1;
 }
 
 #filtering .products .tab-content a {
