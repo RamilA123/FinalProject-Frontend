@@ -1,4 +1,4 @@
-// FLAG
+//FLAG
 let flagHeader = document.querySelector(".flag-header");
 
 let flags = document.querySelectorAll(".flag-item");
@@ -44,21 +44,21 @@ for (const flag of flags) {
         }
     })
 }
-// FLAG
+//FLAG
 
 
 
-//UP-ARROW
+// UP-ARROW
 let upArrow = document.querySelector(".up-arrow");
 
 upArrow.addEventListener("click", function () {
     window.scrollTo(0,0);
 })
-//UP-ARROW
+// UP-ARROW
 
 
 
-//DROPDOWN-MENU-START
+// DROPDOWN-MENU
 let dropdownTitles = document.querySelectorAll(".drop-down-title")
 let dropdownMenues = document.querySelectorAll(".drop-down-menu")
 
@@ -89,5 +89,4 @@ for (const dropdown of dropdownMenues) {
         this.previousElementSibling.firstElementChild.children[2].style.color = "";
     })
 }
-
-//DROPDOWN-MENU-END
+// DROPDOWN-MENU

@@ -269,6 +269,7 @@
 
 #header .middle-side a {
    text-decoration: none;
+   color: black;
 }
 
 #header .middle-side .account:hover {
@@ -314,11 +315,6 @@
    cursor: pointer;
 }
 
-
-#header .middle-side .items .icons svg:hover {
-   color: #54b72b;
-}
-
 #header .middle-side .items .icons sup {
    background: #0ad50a;
    padding: 0px 5px;
@@ -326,11 +322,16 @@
    font-size: 12px;
    top: -10px;
    right: 15px;
+   font-weight: bolder;
 }
 
 #header .middle-side .items .icons a svg {
    cursor: pointer;
    color: black;
+}
+
+#header .middle-side .items .icons a:hover svg {
+   color: #54b72b;
 }
 
 #header .middle-side .flags {
@@ -811,32 +812,32 @@ label {
 
 #cart-table .table td {
    color: white;
+   text-align: center;
 }
 
 #cart-table .table .image {
-   padding: 40px 10px;
+   width: 200px;
+   height: 180px;
+   padding: 25px;
 }
 
 #cart-table .table .image img {
    width: 100%;
+   height: 100%;
    transition: all 0.4s;
 }
 
 #cart-table .table .image img:hover {
    cursor: pointer;
-   transform: scale(1.2);
+   transform: scale(1.1);
 }
 
 #cart-table .table .cell {
-   padding: 75px 35px;
-}
-
-#cart-table .table .quantity {
-   padding: 70px 35px;
+   padding: 70px 20px;
 }
 
 #cart-table .table .description {
-   padding: 25px;
+   padding: 30px 20px;
 }
 
 #cart-table .table .cell button {

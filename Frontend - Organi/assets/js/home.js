@@ -46,16 +46,16 @@ for (const flag of flags) {
 }
 // FLAG
 
-//UP-ARROW
+// UP-ARROW
 let upArrow = document.querySelector(".up-arrow");
 
 upArrow.addEventListener("click", function () {
     window.scrollTo(0,0);
 })
-//UP-ARROW
+// UP-ARROW
 
 
-//DROPDOWN-MENU-START
+// DROPDOWN-MENU
 let dropdownTitles = document.querySelectorAll(".drop-down-title")
 let dropdownMenues = document.querySelectorAll(".drop-down-menu")
 
@@ -86,8 +86,7 @@ for (const dropdown of dropdownMenues) {
         this.previousElementSibling.firstElementChild.children[2].style.color = "";
     })
 }
-
-//DROPDOWN-MENU-END
+// DROPDOWN-MENU
 
 
 
@@ -124,7 +123,7 @@ $(document).ready(function () {
 
 
 
-//COUNTDOWN
+// COUNTDOWN
 const targetDate = new Date("2023-09-03 23:59:59").getTime();
 
 const countdownInterval = setInterval(function () {
@@ -144,4 +143,4 @@ const countdownInterval = setInterval(function () {
     document.getElementById("seconds").innerText = numberOfSeconds;
 
 }, 1000);
-//COUNTDOWN
+// COUNTDOWN

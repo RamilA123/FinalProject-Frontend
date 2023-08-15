@@ -46,16 +46,16 @@ for (const flag of flags) {
 }
 // FLAG
 
-//UP-ARROW
+// UP-ARROW
 let upArrow = document.querySelector(".up-arrow");
 
 upArrow.addEventListener("click", function () {
     window.scrollTo(0,0);
 })
-//UP-ARROW
+// UP-ARROW
 
 
-//DROPDOWN-MENU-START
+// DROPDOWN-MENU
 let dropdownTitles = document.querySelectorAll(".drop-down-title")
 let dropdownMenues = document.querySelectorAll(".drop-down-menu")
 
@@ -87,4 +87,4 @@ for (const dropdown of dropdownMenues) {
     })
 }
 
-//DROPDOWN-MENU-END
+// DROPDOWN-MENU

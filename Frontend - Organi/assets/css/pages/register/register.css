@@ -269,6 +269,7 @@
 
 #header .middle-side a {
     text-decoration: none;
+    color: black;
 }
 
 #header .middle-side .account:hover {
@@ -314,11 +315,6 @@
     cursor: pointer;
 }
 
-
-#header .middle-side .items .icons svg:hover {
-    color: #54b72b;
-}
-
 #header .middle-side .items .icons sup {
     background: #0ad50a;
     padding: 0px 5px;
@@ -326,11 +322,16 @@
     font-size: 12px;
     top: -10px;
     right: 15px;
+    font-weight: bolder;;
 }
 
 #header .middle-side .items .icons a svg {
     cursor: pointer;
     color: black;
+ }
+ 
+#header .middle-side .items .icons a:hover svg {
+    color: #54b72b;
 }
 
 #header .middle-side .flags {

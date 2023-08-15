@@ -46,16 +46,16 @@ for (const flag of flags) {
 }
 // FLAG
 
-//UP-ARROW
+// UP-ARROW
 let upArrow = document.querySelector(".up-arrow");
 
 upArrow.addEventListener("click", function () {
     window.scrollTo(0,0);
 })
-//UP-ARROW
+// UP-ARROW
 
 
-//DROPDOWN-MENU-START
+// DROPDOWN-MENU
 let dropdownTitles = document.querySelectorAll(".drop-down-title")
 let dropdownMenues = document.querySelectorAll(".drop-down-menu")
 
@@ -86,5 +86,29 @@ for (const dropdown of dropdownMenues) {
         this.previousElementSibling.firstElementChild.children[2].style.color = "";
     })
 }
+//DROPDOWN-MENU
 
-//DROPDOWN-MENU-END
+
+
+// INCREASE-DECREASE-PRODUCT-COUNT
+let plusIcons = document.querySelectorAll(".plus")
+let minusIcons = document.querySelectorAll(".minus")
+
+
+plusIcons.forEach(plus => {
+    plus.addEventListener("click",function(){
+    this.nextElementSibling.value++;
+})
+});
+
+
+minusIcons.forEach(minus => {
+    minus.addEventListener("click",function(){
+        if (this.previousElementSibling.value > 1){
+            this.previousElementSibling.value--
+        }
+    })
+})
+// INCREASE-DECREASE-PRODUCT-COUNT
+
+
