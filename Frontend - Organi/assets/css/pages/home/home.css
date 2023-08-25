@@ -1466,6 +1466,10 @@
    color: white;
 }
 
+#countdown .countdown .countdown-timer .double-dot {
+   color: white;
+}
+
 #countdown .countdown .countdown-timer .countdown-item span {
    display: block;
 }
